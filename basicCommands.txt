@@ -1,0 +1,34 @@
+How to add my changes to my branch:
+	
+	$ git add <filename>
+or		this will add files one at a time to a buffer
+	$ git add .
+		this will add all files in the folder to the buffer
+	
+	$ git commit -m "Title of commit"
+		Title of commit can be changed to anything relavent to the files changed
+	$ git push
+		this will push your changes up to your branch
+
+How to put my changes in the master branch
+	open your browser and then go to your branch
+	click the pull request button and create pull request
+	get someone to merge your pull request to the master branch
+
+How to update my branch to be inline with the master branch
+	
+	$ git fetch upstream
+		if this fails see **
+	$ git merge upstream/master
+	
+	$ git push origin master
+
+
+
+
+
+
+**
+	$ git stash
+		this command will eliminate any changes you have made and not commited to 
+		your branch
