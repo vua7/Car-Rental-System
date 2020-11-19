@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cmpt291A3
 {
-    public partial class Form2 : Form
+    public partial class EmployeeRentalScreen : Form
     {
-        public Form2()
+        public EmployeeRentalScreen()
         {
             InitializeComponent();
         }
