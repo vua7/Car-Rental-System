@@ -262,7 +262,7 @@ namespace sandbox2
             this.logInButton.Text = "Log In";
             this.logInButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -290,8 +290,8 @@ namespace sandbox2
             this.Controls.Add(this.LastNameLabel);
             this.Controls.Add(this.FirstNameLabel);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "LoginScreen";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
