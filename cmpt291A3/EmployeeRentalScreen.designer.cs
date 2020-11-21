@@ -1,6 +1,6 @@
 ﻿namespace cmpt291A3
 {
-    partial class Form2
+    partial class EmployeeRentalScreen
     {
         /// <summary>
         /// Required designer variable.
