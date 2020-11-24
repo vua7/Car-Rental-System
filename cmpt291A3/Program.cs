@@ -17,7 +17,7 @@ namespace cmpt291A3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Added login screen instead of form1 to be run
-            Application.Run(new sandbox2.LoginScreen());
+            Application.Run(new cmpt291A3.LoginScreen());
         }
     }
 }

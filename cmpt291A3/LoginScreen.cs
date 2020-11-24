@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sandbox2
+namespace cmpt291A3
 {
     public partial class LoginScreen : Form
     {

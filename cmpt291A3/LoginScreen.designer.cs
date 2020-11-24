@@ -1,5 +1,5 @@
 ﻿
-namespace sandbox2
+namespace cmpt291A3
 {
     partial class LoginScreen
     {
