@@ -12,12 +12,17 @@ namespace cmpt291A3
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+
+
         static void Main()
         {
+
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Added login screen instead of form1 to be run
-            Application.Run(new cmpt291A3.LoginScreen());
+            Application.Run(new cmpt291A3.EditCustomer());
         }
     }
 }
