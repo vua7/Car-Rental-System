@@ -213,6 +213,7 @@ namespace cmpt291A3
             this.addCustomerButton.TabIndex = 13;
             this.addCustomerButton.Text = "Add";
             this.addCustomerButton.UseVisualStyleBackColor = true;
+            this.addCustomerButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.addCustomerButton_MouseClick);
             // 
             // removeCustomerButton
             // 
@@ -224,6 +225,7 @@ namespace cmpt291A3
             this.removeCustomerButton.TabIndex = 14;
             this.removeCustomerButton.Text = "Remove";
             this.removeCustomerButton.UseVisualStyleBackColor = true;
+            this.removeCustomerButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.removeCustomerButton_MouseClick);
             // 
             // customerMembershipComboBox
             // 

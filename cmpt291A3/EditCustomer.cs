@@ -61,5 +61,37 @@ namespace cmpt291A3
             customerEditConfirmationLabel.Show();
             customerEditConfirmationLabel.Text = "Hello World";
         }
+
+        private void addCustomerButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                
+                myCommand.CommandText = "insert into Customers values(2, 'Jane', 'Doe', 123456799, 12346, 'oldStreet', 16, 1, 'Regina', 'Saskatchewan', 'A1B 2C3', 5874567890);";
+                MessageBox.Show(myCommand.CommandText);
+
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.ToString(), "Error");
+            }
+        }
+
+        private void removeCustomerButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+
+                myCommand.CommandText = "delete from Customers where CustomerID= " + customerIDTextBox.Text;
+                MessageBox.Show(myCommand.CommandText);
+
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.ToString(), "Error");
+            }
+        }
     }
 }

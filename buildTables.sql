@@ -18,6 +18,6 @@ apt_number int,
 city varchar(20),
 province varchar(20),
 zip varchar(7),
-phone_number int);
+phone_number bigint);
 
 insert into Customers values(1, 'John', 'Hancock', 123456789, 12345, 'newStreet', 15, 0, 'Edmonton', 'Alberta', 'A1B 2C3', 1234567890);
