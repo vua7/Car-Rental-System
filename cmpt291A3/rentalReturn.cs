@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cmpt291A3
 {
-    public partial class rentalReturn : Form
+    public partial class RentalReturn : Form
     {
-        public rentalReturn()
+        public RentalReturn()
         {
             InitializeComponent();
         }

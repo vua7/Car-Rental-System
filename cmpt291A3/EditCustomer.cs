@@ -7,34 +7,91 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace cmpt291A3
 {
-    public partial class editCustomerForm : Form
+    public partial class EditCustomer : Form
     {
-        public editCustomerForm()
+        public SqlConnection myConnection;
+        public SqlCommand myCommand;
+        public SqlDataReader myReader;
+
+
+        public EditCustomer()
         {
             InitializeComponent();
+            String connectionString = "Server = localhost; Database = GROUP5291; Trusted_Connection = yes;";
+
+            SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds
+
+            try
+            {
+                myConnection.Open(); // Open connection
+                myCommand = new SqlCommand();
+                myCommand.Connection = myConnection; // Link the command stream to the connection
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "Error");
+                this.Close();
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void updateCustomerButton_MouseClick(object sender, MouseEventArgs e)
         {
+            try
+            {
+                //String city = "'Calgary'";
 
+                //String CustID = "1";
+                myCommand.CommandText = "UPDATE Customers SET city= '" + customerCityTextBox.Text + "' where CustomerID= " + customerIDTextBox.Text + ";";
+                MessageBox.Show(myCommand.CommandText);
+
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.ToString(), "Error");
+            }
+
+
+
+
+            customerEditConfirmationLabel.Show();
+            customerEditConfirmationLabel.Text = "Hello World";
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void addCustomerButton_MouseClick(object sender, MouseEventArgs e)
         {
+            try
+            {
+                
+                myCommand.CommandText = "insert into Customers values(2, 'Jane', 'Doe', 123456799, 12346, 'oldStreet', 16, 1, 'Regina', 'Saskatchewan', 'A1B 2C3', 5874567890);";
+                MessageBox.Show(myCommand.CommandText);
 
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.ToString(), "Error");
+            }
         }
 
-        private void membershipLabel_Click(object sender, EventArgs e)
+        private void removeCustomerButton_MouseClick(object sender, MouseEventArgs e)
         {
+            try
+            {
 
-        }
+                myCommand.CommandText = "delete from Customers where CustomerID= " + customerIDTextBox.Text;
+                MessageBox.Show(myCommand.CommandText);
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
+                myCommand.ExecuteNonQuery();
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.ToString(), "Error");
+            }
         }
     }
 }
