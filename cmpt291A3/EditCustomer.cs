@@ -93,5 +93,27 @@ namespace cmpt291A3
                 MessageBox.Show(e2.ToString(), "Error");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Customers";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+                customerGridView.Rows.Clear();
+                while (myReader.Read())
+                {
+                    customerGridView.Rows.Add(myReader["CustomerID"].ToString(), myReader["first_name"].ToString());
+                }
+                myReader.Close();
+
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
     }
 }
