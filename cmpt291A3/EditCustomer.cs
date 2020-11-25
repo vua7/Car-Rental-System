@@ -66,15 +66,30 @@ namespace cmpt291A3
         {
             try
             {
-                
-                myCommand.CommandText = "insert into Customers values(2, 'Jane', 'Doe', 123456799, 12346, 'oldStreet', 16, 1, 'Regina', 'Saskatchewan', 'A1B 2C3', 5874567890);";
-                MessageBox.Show(myCommand.CommandText);
+                //String variables for all textbox feilds
+                String CustomerID = customerIDTextBox.Text;
+                String first_name = customerFirstNameTextBox.Text;
+                String last_name = customerLastNameTextBox.Text;
+                String driving_license = customerDrivingLicenseTextBox.Text;
+                String membership = customerMembershipComboBox.Text;
+                String street_name = customerStreetNameTextBox.Text;
+                String street_number = customerStreetNumberTextBox.Text;
+                String apt_number = customerApartmentNumberTextBox.Text;
+                String city = customerCityTextBox.Text;
+                String province = customerProvinceTextBox.Text;
+                String zip = customerZIPTextBox.Text;
+                String phone_number = customerPhoneNumberTextBox.Text;
 
+                //SQL statment to add new customer
+                myCommand.CommandText = "insert into Customers values("+CustomerID+", '"+first_name+"', '"+last_name+"', "+driving_license+", "+membership+", '"+street_name+"', "+street_number+", "+apt_number+", '"+city+"', '"+province+"', '"+zip+"', "+phone_number+");";
+                MessageBox.Show(myCommand.CommandText);
                 myCommand.ExecuteNonQuery();
             }
             catch (Exception e2)
             {
                 MessageBox.Show(e2.ToString(), "Error");
+                customerEditConfirmationLabel.Text = "Enter valid customer information!";
+                customerEditConfirmationLabel.Show();
             }
         }
 
