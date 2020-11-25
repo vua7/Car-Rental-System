@@ -60,14 +60,13 @@ namespace cmpt291A3
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.customerGridView = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.customerGridView = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerGridView)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +75,7 @@ namespace cmpt291A3
             // 
             this.customerIDLabel.AutoSize = true;
             this.customerIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerIDLabel.Location = new System.Drawing.Point(28, 18);
+            this.customerIDLabel.Location = new System.Drawing.Point(44, 37);
             this.customerIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
             this.customerIDLabel.Name = "customerIDLabel";
             this.customerIDLabel.Size = new System.Drawing.Size(96, 16);
@@ -243,6 +242,9 @@ namespace cmpt291A3
             // customerMembershipComboBox
             // 
             this.customerMembershipComboBox.FormattingEnabled = true;
+            this.customerMembershipComboBox.Items.AddRange(new object[] {
+            "No",
+            "Yes"});
             this.customerMembershipComboBox.Location = new System.Drawing.Point(259, 257);
             this.customerMembershipComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerMembershipComboBox.Name = "customerMembershipComboBox";
@@ -341,7 +343,7 @@ namespace cmpt291A3
             // 
             this.customerEditConfirmationLabel.AutoSize = true;
             this.customerEditConfirmationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerEditConfirmationLabel.Location = new System.Drawing.Point(373, 464);
+            this.customerEditConfirmationLabel.Location = new System.Drawing.Point(405, 457);
             this.customerEditConfirmationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.customerEditConfirmationLabel.Name = "customerEditConfirmationLabel";
             this.customerEditConfirmationLabel.Size = new System.Drawing.Size(232, 25);
@@ -362,34 +364,6 @@ namespace cmpt291A3
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.customerEditConfirmationLabel);
-            this.tabPage1.Controls.Add(this.customerIDLabel);
-            this.tabPage1.Controls.Add(this.removeCustomerButton);
-            this.tabPage1.Controls.Add(this.customerZIPTextBox);
-            this.tabPage1.Controls.Add(this.addCustomerButton);
-            this.tabPage1.Controls.Add(this.customerProvinceTextBox);
-            this.tabPage1.Controls.Add(this.updateCustomerButton);
-            this.tabPage1.Controls.Add(this.customerCityTextBox);
-            this.tabPage1.Controls.Add(this.customerApartmentNumberTextBox);
-            this.tabPage1.Controls.Add(this.customerStreetNumberTextBox);
-            this.tabPage1.Controls.Add(this.customerPhoneNumberTextBox);
-            this.tabPage1.Controls.Add(this.customerStreetNameTextBox);
-            this.tabPage1.Controls.Add(this.customerFirstNameLabel);
-            this.tabPage1.Controls.Add(this.customerDrivingLicenseTextBox);
-            this.tabPage1.Controls.Add(this.customerLastNameLabel);
-            this.tabPage1.Controls.Add(this.customerLastNameTextBox);
-            this.tabPage1.Controls.Add(this.customerDrivingLicenseLabel);
-            this.tabPage1.Controls.Add(this.customerMembershipComboBox);
-            this.tabPage1.Controls.Add(this.customerIDTextBox);
-            this.tabPage1.Controls.Add(this.customerPhoneNumberLabel);
-            this.tabPage1.Controls.Add(this.customerZIPLabel);
-            this.tabPage1.Controls.Add(this.customerMembershipLabel);
-            this.tabPage1.Controls.Add(this.customerProvinceLabel);
-            this.tabPage1.Controls.Add(this.customerFirstNameTextBox);
-            this.tabPage1.Controls.Add(this.customerCityLabel);
-            this.tabPage1.Controls.Add(this.customerStreetNameLabel);
-            this.tabPage1.Controls.Add(this.customerApartmentNumberLabel);
-            this.tabPage1.Controls.Add(this.customerStreetNumberLabel);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -412,6 +386,31 @@ namespace cmpt291A3
             this.tabPage2.Text = "Query";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(744, 387);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(436, 388);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(47, 387);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(331, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
             // customerGridView
             // 
             this.customerGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -424,31 +423,6 @@ namespace cmpt291A3
             this.customerGridView.RowTemplate.Height = 24;
             this.customerGridView.Size = new System.Drawing.Size(945, 316);
             this.customerGridView.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(47, 387);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(331, 24);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(436, 388);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(744, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ID
             // 
@@ -501,12 +475,11 @@ namespace cmpt291A3
             this.Name = "EditCustomer";
             this.Text = "Edit Customer";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
