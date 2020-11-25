@@ -230,6 +230,7 @@ namespace cmpt291A3
             // removeCustomerButton
             // 
             this.removeCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.removeCustomerButton.Location = new System.Drawing.Point(688, 351);
             this.removeCustomerButton.Margin = new System.Windows.Forms.Padding(4);
             this.removeCustomerButton.Name = "removeCustomerButton";
@@ -387,8 +388,9 @@ namespace cmpt291A3
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
-            // 
+            //
             this.button1.Location = new System.Drawing.Point(744, 387);
+
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -400,6 +402,7 @@ namespace cmpt291A3
             // 
             this.textBox1.Location = new System.Drawing.Point(436, 388);
             this.textBox1.Name = "textBox1";
+
             this.textBox1.Size = new System.Drawing.Size(184, 20);
             this.textBox1.TabIndex = 2;
             // 
@@ -408,6 +411,7 @@ namespace cmpt291A3
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(47, 387);
             this.comboBox1.Name = "comboBox1";
+
             this.comboBox1.Size = new System.Drawing.Size(331, 21);
             this.comboBox1.TabIndex = 1;
             // 

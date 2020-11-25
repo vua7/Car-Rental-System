@@ -37,7 +37,7 @@ namespace cmpt291A3
                 this.Close();
             }
         }
-
+        
         private void updateCustomerButton_MouseClick(object sender, MouseEventArgs e)
         {
             try
