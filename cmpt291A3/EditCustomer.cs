@@ -45,7 +45,13 @@ namespace cmpt291A3
                 //String city = "'Calgary'";
 
                 //String CustID = "1";
-                myCommand.CommandText = "UPDATE Customers SET city= '" + customerCityTextBox.Text + "' where CustomerID= " + customerIDTextBox.Text + ";";
+                myCommand.CommandText = "UPDATE Customers SET " +
+                    "first_name = '" + customerFirstNameTextBox.Text + "', last_name = '" + customerLastNameTextBox.Text +
+                    "', driving_license = '" + customerDrivingLicenseTextBox.Text + "', phone_number = '" + customerPhoneNumberTextBox.Text + 
+                    "', membership = '" + customerMembershipComboBox.SelectedIndex + "', street_name = '" + customerStreetNameTextBox.Text + 
+                    "', street_number = '" + customerStreetNumberTextBox.Text + "', apt_number = '" + customerApartmentNumberTextBox.Text + 
+                    "', city= '" + customerCityTextBox.Text + "', province = '" + customerProvinceTextBox.Text + 
+                    "', zip = '" + customerZIPTextBox.Text + "' where CustomerID= " + customerIDTextBox.Text + ";";
                 MessageBox.Show(myCommand.CommandText);
 
                 myCommand.ExecuteNonQuery();
@@ -54,9 +60,6 @@ namespace cmpt291A3
             {
                 MessageBox.Show(e2.ToString(), "Error");
             }
-
-
-
 
             customerEditConfirmationLabel.Show();
             customerEditConfirmationLabel.Text = "Hello World";
