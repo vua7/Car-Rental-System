@@ -105,7 +105,7 @@ namespace cmpt291A3
                 customerGridView.Rows.Clear();
                 while (myReader.Read())
                 {
-                    customerGridView.Rows.Add(myReader["CustomerID"].ToString(), myReader["first_name"].ToString());
+                    customerGridView.Rows.Add(myReader["CustomerID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["driving_license"].ToString(), myReader["membership"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
                 }
                 myReader.Close();
 
