@@ -159,6 +159,7 @@ ipch/
 *.psess
 *.vsp
 *.vspx
+.vs/slnx.sqlite
 
 # TFS 2012 Local Workspace
 $tf/
