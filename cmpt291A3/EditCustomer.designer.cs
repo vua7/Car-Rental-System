@@ -388,9 +388,8 @@ namespace cmpt291A3
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
-            //
+            // 
             this.button1.Location = new System.Drawing.Point(744, 387);
-
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -402,8 +401,7 @@ namespace cmpt291A3
             // 
             this.textBox1.Location = new System.Drawing.Point(436, 388);
             this.textBox1.Name = "textBox1";
-
-            this.textBox1.Size = new System.Drawing.Size(184, 20);
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
             this.textBox1.TabIndex = 2;
             // 
             // comboBox1
@@ -411,8 +409,7 @@ namespace cmpt291A3
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(47, 387);
             this.comboBox1.Name = "comboBox1";
-
-            this.comboBox1.Size = new System.Drawing.Size(331, 21);
+            this.comboBox1.Size = new System.Drawing.Size(331, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // customerGridView
@@ -421,7 +418,7 @@ namespace cmpt291A3
             this.customerGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.First_Name});
-            this.customerGridView.Location = new System.Drawing.Point(27, 21);
+            this.customerGridView.Location = new System.Drawing.Point(24, 18);
             this.customerGridView.Name = "customerGridView";
             this.customerGridView.RowHeadersWidth = 51;
             this.customerGridView.RowTemplate.Height = 24;
