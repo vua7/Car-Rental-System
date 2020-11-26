@@ -66,6 +66,16 @@ namespace cmpt291A3
             this.customerGridView = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.License = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membership = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aptNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.province = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.postalcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerGridView)).BeginInit();
@@ -388,9 +398,8 @@ namespace cmpt291A3
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
-            //
+            // 
             this.button1.Location = new System.Drawing.Point(744, 387);
-
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -402,8 +411,7 @@ namespace cmpt291A3
             // 
             this.textBox1.Location = new System.Drawing.Point(436, 388);
             this.textBox1.Name = "textBox1";
-
-            this.textBox1.Size = new System.Drawing.Size(184, 20);
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
             this.textBox1.TabIndex = 2;
             // 
             // comboBox1
@@ -411,8 +419,7 @@ namespace cmpt291A3
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(47, 387);
             this.comboBox1.Name = "comboBox1";
-
-            this.comboBox1.Size = new System.Drawing.Size(331, 21);
+            this.comboBox1.Size = new System.Drawing.Size(331, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // customerGridView
@@ -420,8 +427,18 @@ namespace cmpt291A3
             this.customerGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
-            this.First_Name});
-            this.customerGridView.Location = new System.Drawing.Point(27, 21);
+            this.First_Name,
+            this.Last_Name,
+            this.License,
+            this.membership,
+            this.stName,
+            this.stNo,
+            this.aptNum,
+            this.cityName,
+            this.province,
+            this.postalcode,
+            this.phone});
+            this.customerGridView.Location = new System.Drawing.Point(24, 18);
             this.customerGridView.Name = "customerGridView";
             this.customerGridView.RowHeadersWidth = 51;
             this.customerGridView.RowTemplate.Height = 24;
@@ -441,6 +458,76 @@ namespace cmpt291A3
             this.First_Name.MinimumWidth = 6;
             this.First_Name.Name = "First_Name";
             this.First_Name.Width = 125;
+            // 
+            // Last_Name
+            // 
+            this.Last_Name.HeaderText = "Last Name";
+            this.Last_Name.MinimumWidth = 6;
+            this.Last_Name.Name = "Last_Name";
+            this.Last_Name.Width = 125;
+            // 
+            // License
+            // 
+            this.License.HeaderText = "License";
+            this.License.MinimumWidth = 6;
+            this.License.Name = "License";
+            this.License.Width = 125;
+            // 
+            // membership
+            // 
+            this.membership.HeaderText = "Membership";
+            this.membership.MinimumWidth = 6;
+            this.membership.Name = "membership";
+            this.membership.Width = 125;
+            // 
+            // stName
+            // 
+            this.stName.HeaderText = "Street Name";
+            this.stName.MinimumWidth = 6;
+            this.stName.Name = "stName";
+            this.stName.Width = 125;
+            // 
+            // stNo
+            // 
+            this.stNo.HeaderText = "Street Number";
+            this.stNo.MinimumWidth = 6;
+            this.stNo.Name = "stNo";
+            this.stNo.Width = 125;
+            // 
+            // aptNum
+            // 
+            this.aptNum.HeaderText = "Apartment Number";
+            this.aptNum.MinimumWidth = 6;
+            this.aptNum.Name = "aptNum";
+            this.aptNum.Width = 125;
+            // 
+            // cityName
+            // 
+            this.cityName.HeaderText = "City";
+            this.cityName.MinimumWidth = 6;
+            this.cityName.Name = "cityName";
+            this.cityName.Width = 125;
+            // 
+            // province
+            // 
+            this.province.HeaderText = "Province";
+            this.province.MinimumWidth = 6;
+            this.province.Name = "province";
+            this.province.Width = 125;
+            // 
+            // postalcode
+            // 
+            this.postalcode.HeaderText = "Postal Code";
+            this.postalcode.MinimumWidth = 6;
+            this.postalcode.Name = "postalcode";
+            this.postalcode.Width = 125;
+            // 
+            // phone
+            // 
+            this.phone.HeaderText = "Phone Number";
+            this.phone.MinimumWidth = 6;
+            this.phone.Name = "phone";
+            this.phone.Width = 125;
             // 
             // EditCustomer
             // 
@@ -526,5 +613,15 @@ namespace cmpt291A3
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn First_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Last_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn License;
+        private System.Windows.Forms.DataGridViewTextBoxColumn membership;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn stNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aptNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cityName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn province;
+        private System.Windows.Forms.DataGridViewTextBoxColumn postalcode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
     }
 }
