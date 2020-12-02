@@ -45,7 +45,13 @@ namespace cmpt291A3
                 //String city = "'Calgary'";
 
                 //String CustID = "1";
-                myCommand.CommandText = "UPDATE Customers SET city= '" + customerCityTextBox.Text + "' where CustomerID= " + customerIDTextBox.Text + ";";
+                myCommand.CommandText = "UPDATE Customers SET " +
+                    "first_name = '" + customerFirstNameTextBox.Text + "', last_name = '" + customerLastNameTextBox.Text +
+                    "', driving_license = '" + customerDrivingLicenseTextBox.Text + "', phone_number = '" + customerPhoneNumberTextBox.Text +
+                    "', membership = '" + customerMembershipComboBox.SelectedIndex + "', street_name = '" + customerStreetNameTextBox.Text +
+                    "', street_number = '" + customerStreetNumberTextBox.Text + "', apt_number = '" + customerApartmentNumberTextBox.Text +
+                    "', city= '" + customerCityTextBox.Text + "', province = '" + customerProvinceTextBox.Text +
+                    "', zip = '" + customerZIPTextBox.Text + "' where CustomerID= " + customerIDTextBox.Text + ";";
                 MessageBox.Show(myCommand.CommandText);
 
                 myCommand.ExecuteNonQuery();
@@ -54,9 +60,6 @@ namespace cmpt291A3
             {
                 MessageBox.Show(e2.ToString(), "Error");
             }
-
-
-
 
             customerEditConfirmationLabel.Show();
             customerEditConfirmationLabel.Text = "Hello World";
@@ -81,7 +84,7 @@ namespace cmpt291A3
                 String phone_number = customerPhoneNumberTextBox.Text;
 
                 //SQL statment to add new customer
-                myCommand.CommandText = "insert into Customers values("+CustomerID+", '"+first_name+"', '"+last_name+"', "+driving_license+", "+membership+", '"+street_name+"', "+street_number+", "+apt_number+", '"+city+"', '"+province+"', '"+zip+"', "+phone_number+");";
+                myCommand.CommandText = "insert into Customers values(" + CustomerID + ", '" + first_name + "', '" + last_name + "', " + driving_license + ", " + membership + ", '" + street_name + "', " + street_number + ", " + apt_number + ", '" + city + "', '" + province + "', '" + zip + "', " + phone_number + ");";
                 MessageBox.Show(myCommand.CommandText);
                 myCommand.ExecuteNonQuery();
             }
@@ -106,6 +109,28 @@ namespace cmpt291A3
             catch (Exception e2)
             {
                 MessageBox.Show(e2.ToString(), "Error");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Customers";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+                customerGridView.Rows.Clear();
+                while (myReader.Read())
+                {
+                    customerGridView.Rows.Add(myReader["CustomerID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["driving_license"].ToString(), myReader["membership"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                }
+                myReader.Close();
+
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
             }
         }
     }
