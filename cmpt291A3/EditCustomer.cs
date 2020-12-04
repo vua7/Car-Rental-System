@@ -18,11 +18,9 @@ namespace cmpt291A3
         public SqlDataReader myReader;
 
 
-        public EditCustomer()
+        public EditCustomer(string connectionString)
         {
             InitializeComponent();
-            String connectionString = "Server = localhost; Database = GROUP5291; Trusted_Connection = yes;";
-
             SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds
 
             try
@@ -36,6 +34,7 @@ namespace cmpt291A3
                 MessageBox.Show(e.ToString(), "Error");
                 this.Close();
             }
+
         }
 
         private void updateCustomerButton_MouseClick(object sender, MouseEventArgs e)

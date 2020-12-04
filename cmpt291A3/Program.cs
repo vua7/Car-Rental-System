@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace cmpt291A3
 {
+    
     static class Program
     {
         /// <summary>
@@ -22,7 +24,7 @@ namespace cmpt291A3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Added login screen instead of form1 to be run
-            Application.Run(new cmpt291A3.EditCustomer());
+            Application.Run(new cmpt291A3.Welcome());
         }
     }
 }
