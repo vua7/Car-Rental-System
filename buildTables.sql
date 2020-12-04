@@ -2,6 +2,11 @@ use GROUP5291;
 
 begin try
 	drop table Customers;
+	drop table Cars;
+	drop table Car_types;
+	drop table Branches;
+	drop table Employees;
+	drop table Rental_trans;
 end try
 begin catch
 end catch
@@ -19,5 +24,10 @@ city varchar(20),
 province varchar(20),
 zip varchar(7),
 phone_number bigint);
+
+create table Cars (
+VIN varchar(17),
+Color varchar(20)
+);
 
 insert into Customers values(1, 'John', 'Hancock', 123456789, 12345, 'newStreet', 15, 0, 'Edmonton', 'Alberta', 'A1B 2C3', 1234567890);

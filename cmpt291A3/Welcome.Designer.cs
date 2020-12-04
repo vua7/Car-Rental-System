@@ -29,44 +29,44 @@ namespace cmpt291A3
         /// </summary>
         private void InitializeComponent()
         {
-            this.addEditCustomer = new System.Windows.Forms.Button();
-            this.addEditCar = new System.Windows.Forms.Button();
-            this.addEditBranch = new System.Windows.Forms.Button();
+            this.customers = new System.Windows.Forms.Button();
+            this.cars = new System.Windows.Forms.Button();
+            this.branches = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.viewRentalOptions = new System.Windows.Forms.Button();
-            this.addEditEmployee = new System.Windows.Forms.Button();
-            this.beginEditRental = new System.Windows.Forms.Button();
-            this.returnRental = new System.Windows.Forms.Button();
+            this.employees = new System.Windows.Forms.Button();
+            this.rentals = new System.Windows.Forms.Button();
+            this.reports = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // addEditCustomer
+            // customers
             // 
-            this.addEditCustomer.Location = new System.Drawing.Point(68, 73);
-            this.addEditCustomer.Name = "addEditCustomer";
-            this.addEditCustomer.Size = new System.Drawing.Size(163, 55);
-            this.addEditCustomer.TabIndex = 0;
-            this.addEditCustomer.Text = "Add/Edit Customer";
-            this.addEditCustomer.UseVisualStyleBackColor = true;
-            this.addEditCustomer.Click += new System.EventHandler(this.addEditCustomer_Click);
+            this.customers.Location = new System.Drawing.Point(68, 73);
+            this.customers.Name = "customers";
+            this.customers.Size = new System.Drawing.Size(163, 55);
+            this.customers.TabIndex = 0;
+            this.customers.Text = "Customers";
+            this.customers.UseVisualStyleBackColor = true;
+            this.customers.Click += new System.EventHandler(this.addEditCustomer_Click);
             // 
-            // addEditCar
+            // cars
             // 
-            this.addEditCar.Location = new System.Drawing.Point(68, 155);
-            this.addEditCar.Name = "addEditCar";
-            this.addEditCar.Size = new System.Drawing.Size(163, 55);
-            this.addEditCar.TabIndex = 1;
-            this.addEditCar.Text = "Add/Edit Car";
-            this.addEditCar.UseVisualStyleBackColor = true;
+            this.cars.Location = new System.Drawing.Point(68, 155);
+            this.cars.Name = "cars";
+            this.cars.Size = new System.Drawing.Size(163, 55);
+            this.cars.TabIndex = 1;
+            this.cars.Text = "cars";
+            this.cars.UseVisualStyleBackColor = true;
             // 
-            // addEditBranch
+            // branches
             // 
-            this.addEditBranch.Location = new System.Drawing.Point(68, 245);
-            this.addEditBranch.Name = "addEditBranch";
-            this.addEditBranch.Size = new System.Drawing.Size(163, 55);
-            this.addEditBranch.TabIndex = 2;
-            this.addEditBranch.Text = "Add/Edit Branch";
-            this.addEditBranch.UseVisualStyleBackColor = true;
+            this.branches.Location = new System.Drawing.Point(68, 245);
+            this.branches.Name = "branches";
+            this.branches.Size = new System.Drawing.Size(163, 55);
+            this.branches.TabIndex = 2;
+            this.branches.Text = "Branches";
+            this.branches.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -97,47 +97,47 @@ namespace cmpt291A3
             this.viewRentalOptions.Text = "View Rental Options";
             this.viewRentalOptions.UseVisualStyleBackColor = true;
             // 
-            // addEditEmployee
+            // employees
             // 
-            this.addEditEmployee.Location = new System.Drawing.Point(68, 339);
-            this.addEditEmployee.Name = "addEditEmployee";
-            this.addEditEmployee.Size = new System.Drawing.Size(163, 55);
-            this.addEditEmployee.TabIndex = 6;
-            this.addEditEmployee.Text = "Add/Edit employee";
-            this.addEditEmployee.UseVisualStyleBackColor = true;
+            this.employees.Location = new System.Drawing.Point(68, 339);
+            this.employees.Name = "employees";
+            this.employees.Size = new System.Drawing.Size(163, 55);
+            this.employees.TabIndex = 6;
+            this.employees.Text = "Employees";
+            this.employees.UseVisualStyleBackColor = true;
             // 
-            // beginEditRental
+            // rentals
             // 
-            this.beginEditRental.Location = new System.Drawing.Point(255, 73);
-            this.beginEditRental.Name = "beginEditRental";
-            this.beginEditRental.Size = new System.Drawing.Size(163, 55);
-            this.beginEditRental.TabIndex = 7;
-            this.beginEditRental.Text = "Begin/Edit Rental";
-            this.beginEditRental.UseVisualStyleBackColor = true;
+            this.rentals.Location = new System.Drawing.Point(255, 73);
+            this.rentals.Name = "rentals";
+            this.rentals.Size = new System.Drawing.Size(163, 55);
+            this.rentals.TabIndex = 7;
+            this.rentals.Text = "Rentals";
+            this.rentals.UseVisualStyleBackColor = true;
             // 
-            // returnRental
+            // reports
             // 
-            this.returnRental.Location = new System.Drawing.Point(255, 155);
-            this.returnRental.Name = "returnRental";
-            this.returnRental.Size = new System.Drawing.Size(163, 55);
-            this.returnRental.TabIndex = 8;
-            this.returnRental.Text = "Rental Return";
-            this.returnRental.UseVisualStyleBackColor = true;
+            this.reports.Location = new System.Drawing.Point(255, 155);
+            this.reports.Name = "reports";
+            this.reports.Size = new System.Drawing.Size(163, 55);
+            this.reports.TabIndex = 8;
+            this.reports.Text = "Reports";
+            this.reports.UseVisualStyleBackColor = true;
             // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 488);
-            this.Controls.Add(this.returnRental);
-            this.Controls.Add(this.beginEditRental);
-            this.Controls.Add(this.addEditEmployee);
+            this.Controls.Add(this.reports);
+            this.Controls.Add(this.rentals);
+            this.Controls.Add(this.employees);
             this.Controls.Add(this.viewRentalOptions);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.addEditBranch);
-            this.Controls.Add(this.addEditCar);
-            this.Controls.Add(this.addEditCustomer);
+            this.Controls.Add(this.branches);
+            this.Controls.Add(this.cars);
+            this.Controls.Add(this.customers);
             this.Name = "Welcome";
             this.Text = "Welcome";
             this.ResumeLayout(false);
@@ -147,14 +147,14 @@ namespace cmpt291A3
 
         #endregion
 
-        private System.Windows.Forms.Button addEditCustomer;
-        private System.Windows.Forms.Button addEditCar;
-        private System.Windows.Forms.Button addEditBranch;
+        private System.Windows.Forms.Button customers;
+        private System.Windows.Forms.Button cars;
+        private System.Windows.Forms.Button branches;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button viewRentalOptions;
-        private System.Windows.Forms.Button addEditEmployee;
-        private System.Windows.Forms.Button beginEditRental;
-        private System.Windows.Forms.Button returnRental;
+        private System.Windows.Forms.Button employees;
+        private System.Windows.Forms.Button rentals;
+        private System.Windows.Forms.Button reports;
     }
 }

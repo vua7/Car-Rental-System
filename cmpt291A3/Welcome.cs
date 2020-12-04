@@ -42,7 +42,7 @@ namespace cmpt291A3
 
         private void addEditCustomer_Click(object sender, EventArgs e)
         {
-            //code to switch forms
+            //code to switch forms and delete old form
             this.Hide();
             EditCustomer ec = new EditCustomer(connectionString);
             ec.ShowDialog();
