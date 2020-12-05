@@ -131,6 +131,7 @@ namespace cmpt291A3
             this.reports.TabIndex = 8;
             this.reports.Text = "Reports";
             this.reports.UseVisualStyleBackColor = true;
+            this.reports.Click += new System.EventHandler(this.reports_Click);
             // 
             // Welcome
             // 
