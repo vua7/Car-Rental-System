@@ -7,14 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace cmpt291A3
 {
     public partial class EmployeeRentalScreen : Form
-    {
-        public EmployeeRentalScreen()
+    { 
+        public SqlConnection myConnection;
+        public SqlCommand myCommand;
+        public SqlDataReader myReader;
+        public string connectionString;
+
+
+        public EmployeeRentalScreen(string connectionString)
         {
             InitializeComponent();
+            SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds
+
+            try
+            {
+                myConnection.Open(); // Open connection
+                myCommand = new SqlCommand();
+                myCommand.Connection = myConnection; // Link the command stream to the connection
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "Error");
+                this.Close();
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -49,6 +69,14 @@ namespace cmpt291A3
         private void label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Welcome ws = new Welcome();
+            ws.ShowDialog();
+            this.Close();
         }
     }
 }

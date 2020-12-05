@@ -64,6 +64,7 @@
             this.FindCustomerButtn = new System.Windows.Forms.Button();
             this.CIDtextBox = new System.Windows.Forms.TextBox();
             this.CIDErrorMessg = new System.Windows.Forms.Label();
+            this.back_button = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -426,17 +427,28 @@
             this.CIDErrorMessg.Text = "Error enter valid customerr ID";
             this.CIDErrorMessg.Visible = false;
             // 
-            // Form2
+            // back_button
+            // 
+            this.back_button.Location = new System.Drawing.Point(13, 12);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(75, 31);
+            this.back_button.TabIndex = 5;
+            this.back_button.Text = "Back";
+            this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
+            // 
+            // EmployeeRentalScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back_button);
             this.Controls.Add(this.CIDErrorMessg);
             this.Controls.Add(this.CIDtextBox);
             this.Controls.Add(this.FindCustomerButtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form2";
+            this.Name = "EmployeeRentalScreen";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tabControl1.ResumeLayout(false);
@@ -489,5 +501,6 @@
         private System.Windows.Forms.TextBox TotalPriceCF;
         private System.Windows.Forms.TextBox AdditionalFeesCF;
         private System.Windows.Forms.TextBox RentalPriceCF;
+        private System.Windows.Forms.Button back_button;
     }
 }
