@@ -85,7 +85,7 @@ namespace cmpt291A3
             // customerIDLabel
             // 
             this.customerIDLabel.AutoSize = true;
-            this.customerIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerIDLabel.Location = new System.Drawing.Point(28, 18);
             this.customerIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
             this.customerIDLabel.Name = "customerIDLabel";
