@@ -69,9 +69,9 @@ create table Rental_trans (
 	price int,
 	Customer_ID int NULL foreign key references Customers(CustomerID),
 	Employee_ID int NULL foreign key references Employees(Employee_ID),
-	pickup_Branch_ID int NULL foreign key references Branches(Branch_ID),
+	pickup_Branch_ID int NULL foreign key references Branches(Branch_ID) ON DELETE CASCADE,
 	return_Branch_ID int NULL foreign key references Branches(Branch_ID),
-	VIN varchar(17) NULL foreign key references Cars(VIN) ON DELETE CASCADE
+	VIN varchar(17) NULL foreign key references Cars(VIN)
 );
 
 insert into Customers values(1, 'John', 'Hancock', 123456789, 12345, 'newStreet', 15, 0, 'Edmonton', 'Alberta', 'A1B 2C3', '1234567890');
