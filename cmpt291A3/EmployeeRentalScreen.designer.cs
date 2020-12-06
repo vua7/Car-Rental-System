@@ -30,16 +30,21 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.PhoneNumCtab = new System.Windows.Forms.TextBox();
-            this.AddressCtab = new System.Windows.Forms.TextBox();
-            this.NameCtab = new System.Windows.Forms.TextBox();
-            this.MembershipCtab = new System.Windows.Forms.TextBox();
-            this.CIDtextboxCtab = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.return_date_datepicker = new System.Windows.Forms.DateTimePicker();
+            this.pickup_date_datepicker = new System.Windows.Forms.DateTimePicker();
+            this.confirm_rental_button = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.vin_textbox = new System.Windows.Forms.TextBox();
+            this.VIN_label = new System.Windows.Forms.Label();
+            this.return_branch_label = new System.Windows.Forms.Label();
+            this.customer_ID_textbox = new System.Windows.Forms.TextBox();
+            this.rental_Id_textbox = new System.Windows.Forms.TextBox();
+            this.Pickup_date_Label = new System.Windows.Forms.Label();
+            this.Pickup_branch_label = new System.Windows.Forms.Label();
+            this.Return_date_label = new System.Windows.Forms.Label();
+            this.Customer_ID_label = new System.Windows.Forms.Label();
+            this.Rental_ID_Label = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.ReturnBranchRental = new System.Windows.Forms.ComboBox();
             this.PickupBranchRental = new System.Windows.Forms.ComboBox();
@@ -51,31 +56,22 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.TotalPriceCF = new System.Windows.Forms.TextBox();
-            this.AdditionalFeesCF = new System.Windows.Forms.TextBox();
-            this.RentalPriceCF = new System.Windows.Forms.TextBox();
-            this.VehiclesAvailableCF = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.employee_ID_label = new System.Windows.Forms.Label();
             this.FindCustomerButtn = new System.Windows.Forms.Button();
-            this.CIDtextBox = new System.Windows.Forms.TextBox();
-            this.CIDErrorMessg = new System.Windows.Forms.Label();
+            this.employee_ID_textbox = new System.Windows.Forms.TextBox();
             this.back_button = new System.Windows.Forms.Button();
+            this.CIDErrorMessg = new System.Windows.Forms.Label();
+            this.return_branch_ID_textbox = new System.Windows.Forms.TextBox();
+            this.pickup_branch_ID_textbox = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(342, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -84,103 +80,155 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.PhoneNumCtab);
-            this.tabPage1.Controls.Add(this.AddressCtab);
-            this.tabPage1.Controls.Add(this.NameCtab);
-            this.tabPage1.Controls.Add(this.MembershipCtab);
-            this.tabPage1.Controls.Add(this.CIDtextboxCtab);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.pickup_branch_ID_textbox);
+            this.tabPage1.Controls.Add(this.return_branch_ID_textbox);
+            this.tabPage1.Controls.Add(this.return_date_datepicker);
+            this.tabPage1.Controls.Add(this.pickup_date_datepicker);
+            this.tabPage1.Controls.Add(this.confirm_rental_button);
+            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.vin_textbox);
+            this.tabPage1.Controls.Add(this.VIN_label);
+            this.tabPage1.Controls.Add(this.return_branch_label);
+            this.tabPage1.Controls.Add(this.customer_ID_textbox);
+            this.tabPage1.Controls.Add(this.rental_Id_textbox);
+            this.tabPage1.Controls.Add(this.Pickup_date_Label);
+            this.tabPage1.Controls.Add(this.Pickup_branch_label);
+            this.tabPage1.Controls.Add(this.Return_date_label);
+            this.tabPage1.Controls.Add(this.Customer_ID_label);
+            this.tabPage1.Controls.Add(this.Rental_ID_Label);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(438, 393);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Customer";
+            this.tabPage1.Text = "Rent";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // PhoneNumCtab
+            // return_date_datepicker
             // 
-            this.PhoneNumCtab.Location = new System.Drawing.Point(208, 282);
-            this.PhoneNumCtab.Name = "PhoneNumCtab";
-            this.PhoneNumCtab.Size = new System.Drawing.Size(184, 26);
-            this.PhoneNumCtab.TabIndex = 9;
+            this.return_date_datepicker.Location = new System.Drawing.Point(147, 81);
+            this.return_date_datepicker.Name = "return_date_datepicker";
+            this.return_date_datepicker.Size = new System.Drawing.Size(285, 26);
+            this.return_date_datepicker.TabIndex = 18;
             // 
-            // AddressCtab
+            // pickup_date_datepicker
             // 
-            this.AddressCtab.Location = new System.Drawing.Point(208, 228);
-            this.AddressCtab.Name = "AddressCtab";
-            this.AddressCtab.Size = new System.Drawing.Size(184, 26);
-            this.AddressCtab.TabIndex = 8;
+            this.pickup_date_datepicker.Location = new System.Drawing.Point(147, 51);
+            this.pickup_date_datepicker.Name = "pickup_date_datepicker";
+            this.pickup_date_datepicker.Size = new System.Drawing.Size(285, 26);
+            this.pickup_date_datepicker.TabIndex = 17;
             // 
-            // NameCtab
+            // confirm_rental_button
             // 
-            this.NameCtab.Location = new System.Drawing.Point(208, 105);
-            this.NameCtab.Name = "NameCtab";
-            this.NameCtab.Size = new System.Drawing.Size(184, 26);
-            this.NameCtab.TabIndex = 7;
+            this.confirm_rental_button.Location = new System.Drawing.Point(6, 351);
+            this.confirm_rental_button.Name = "confirm_rental_button";
+            this.confirm_rental_button.Size = new System.Drawing.Size(426, 36);
+            this.confirm_rental_button.TabIndex = 16;
+            this.confirm_rental_button.Text = "Confirm Rental";
+            this.confirm_rental_button.UseVisualStyleBackColor = true;
+            this.confirm_rental_button.Click += new System.EventHandler(this.confirm_rental_button_Click);
             // 
-            // MembershipCtab
+            // textBox3
             // 
-            this.MembershipCtab.Location = new System.Drawing.Point(208, 165);
-            this.MembershipCtab.Name = "MembershipCtab";
-            this.MembershipCtab.Size = new System.Drawing.Size(184, 26);
-            this.MembershipCtab.TabIndex = 6;
+            this.textBox3.Location = new System.Drawing.Point(147, 277);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(285, 26);
+            this.textBox3.TabIndex = 15;
             // 
-            // CIDtextboxCtab
+            // label14
             // 
-            this.CIDtextboxCtab.Location = new System.Drawing.Point(208, 44);
-            this.CIDtextboxCtab.Name = "CIDtextboxCtab";
-            this.CIDtextboxCtab.Size = new System.Drawing.Size(184, 26);
-            this.CIDtextboxCtab.TabIndex = 5;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 283);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 20);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Final Price:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label6
+            // vin_textbox
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(54, 111);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Name:";
+            this.vin_textbox.Location = new System.Drawing.Point(147, 213);
+            this.vin_textbox.Name = "vin_textbox";
+            this.vin_textbox.Size = new System.Drawing.Size(285, 26);
+            this.vin_textbox.TabIndex = 13;
             // 
-            // label5
+            // VIN_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 288);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Phone Number";
+            this.VIN_label.AutoSize = true;
+            this.VIN_label.Location = new System.Drawing.Point(6, 219);
+            this.VIN_label.Name = "VIN_label";
+            this.VIN_label.Size = new System.Drawing.Size(40, 20);
+            this.VIN_label.TabIndex = 12;
+            this.VIN_label.Text = "VIN:";
             // 
-            // label4
+            // return_branch_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Membership Level:";
+            this.return_branch_label.AutoSize = true;
+            this.return_branch_label.Location = new System.Drawing.Point(6, 187);
+            this.return_branch_label.Name = "return_branch_label";
+            this.return_branch_label.Size = new System.Drawing.Size(138, 20);
+            this.return_branch_label.TabIndex = 10;
+            this.return_branch_label.Text = "Return Branch ID:";
             // 
-            // label3
+            // customer_ID_textbox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 234);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Address:";
+            this.customer_ID_textbox.Location = new System.Drawing.Point(147, 113);
+            this.customer_ID_textbox.Name = "customer_ID_textbox";
+            this.customer_ID_textbox.Size = new System.Drawing.Size(285, 26);
+            this.customer_ID_textbox.TabIndex = 8;
             // 
-            // label2
+            // rental_Id_textbox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "CustomerID:";
+            this.rental_Id_textbox.Location = new System.Drawing.Point(147, 19);
+            this.rental_Id_textbox.Name = "rental_Id_textbox";
+            this.rental_Id_textbox.Size = new System.Drawing.Size(285, 26);
+            this.rental_Id_textbox.TabIndex = 5;
+            // 
+            // Pickup_date_Label
+            // 
+            this.Pickup_date_Label.AutoSize = true;
+            this.Pickup_date_Label.Location = new System.Drawing.Point(6, 55);
+            this.Pickup_date_Label.Name = "Pickup_date_Label";
+            this.Pickup_date_Label.Size = new System.Drawing.Size(95, 20);
+            this.Pickup_date_Label.TabIndex = 4;
+            this.Pickup_date_Label.Text = "Pickup Date";
+            // 
+            // Pickup_branch_label
+            // 
+            this.Pickup_branch_label.AutoSize = true;
+            this.Pickup_branch_label.Location = new System.Drawing.Point(6, 153);
+            this.Pickup_branch_label.Name = "Pickup_branch_label";
+            this.Pickup_branch_label.Size = new System.Drawing.Size(136, 20);
+            this.Pickup_branch_label.TabIndex = 3;
+            this.Pickup_branch_label.Text = "Pickup Branch ID:";
+            // 
+            // Return_date_label
+            // 
+            this.Return_date_label.AutoSize = true;
+            this.Return_date_label.Location = new System.Drawing.Point(6, 87);
+            this.Return_date_label.Name = "Return_date_label";
+            this.Return_date_label.Size = new System.Drawing.Size(101, 20);
+            this.Return_date_label.TabIndex = 2;
+            this.Return_date_label.Text = "Return Date:";
+            // 
+            // Customer_ID_label
+            // 
+            this.Customer_ID_label.AutoSize = true;
+            this.Customer_ID_label.Location = new System.Drawing.Point(6, 119);
+            this.Customer_ID_label.Name = "Customer_ID_label";
+            this.Customer_ID_label.Size = new System.Drawing.Size(103, 20);
+            this.Customer_ID_label.TabIndex = 1;
+            this.Customer_ID_label.Text = "Customer ID:";
+            // 
+            // Rental_ID_Label
+            // 
+            this.Rental_ID_Label.AutoSize = true;
+            this.Rental_ID_Label.Location = new System.Drawing.Point(6, 24);
+            this.Rental_ID_Label.Name = "Rental_ID_Label";
+            this.Rental_ID_Label.Size = new System.Drawing.Size(82, 20);
+            this.Rental_ID_Label.TabIndex = 0;
+            this.Rental_ID_Label.Text = "Rental_ID";
             // 
             // tabPage2
             // 
@@ -199,7 +247,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(438, 393);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Rentals";
+            this.tabPage2.Text = "Return";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // ReturnBranchRental
@@ -300,108 +348,19 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Vehichle Type:";
             // 
-            // tabPage3
+            // employee_ID_label
             // 
-            this.tabPage3.Controls.Add(this.TotalPriceCF);
-            this.tabPage3.Controls.Add(this.AdditionalFeesCF);
-            this.tabPage3.Controls.Add(this.RentalPriceCF);
-            this.tabPage3.Controls.Add(this.VehiclesAvailableCF);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(438, 393);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Customer Finance";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // TotalPriceCF
-            // 
-            this.TotalPriceCF.Location = new System.Drawing.Point(211, 284);
-            this.TotalPriceCF.Name = "TotalPriceCF";
-            this.TotalPriceCF.Size = new System.Drawing.Size(200, 26);
-            this.TotalPriceCF.TabIndex = 15;
-            // 
-            // AdditionalFeesCF
-            // 
-            this.AdditionalFeesCF.Location = new System.Drawing.Point(211, 165);
-            this.AdditionalFeesCF.Multiline = true;
-            this.AdditionalFeesCF.Name = "AdditionalFeesCF";
-            this.AdditionalFeesCF.Size = new System.Drawing.Size(200, 74);
-            this.AdditionalFeesCF.TabIndex = 14;
-            // 
-            // RentalPriceCF
-            // 
-            this.RentalPriceCF.Location = new System.Drawing.Point(211, 109);
-            this.RentalPriceCF.Name = "RentalPriceCF";
-            this.RentalPriceCF.Size = new System.Drawing.Size(200, 26);
-            this.RentalPriceCF.TabIndex = 13;
-            // 
-            // VehiclesAvailableCF
-            // 
-            this.VehiclesAvailableCF.FormattingEnabled = true;
-            this.VehiclesAvailableCF.Items.AddRange(new object[] {
-            "Desired Vehicle not Available",
-            "Car",
-            "Truck",
-            "Van"});
-            this.VehiclesAvailableCF.Location = new System.Drawing.Point(211, 59);
-            this.VehiclesAvailableCF.Name = "VehiclesAvailableCF";
-            this.VehiclesAvailableCF.Size = new System.Drawing.Size(200, 28);
-            this.VehiclesAvailableCF.TabIndex = 12;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(27, 115);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 20);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "Rental Price";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(27, 165);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 20);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Additional Fees";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(27, 290);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(134, 20);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Total Rental Price";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Vehicle Type Available";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Enter Customer ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.employee_ID_label.AutoSize = true;
+            this.employee_ID_label.Location = new System.Drawing.Point(12, 66);
+            this.employee_ID_label.Name = "employee_ID_label";
+            this.employee_ID_label.Size = new System.Drawing.Size(143, 20);
+            this.employee_ID_label.TabIndex = 1;
+            this.employee_ID_label.Text = "Enter Employee ID";
+            this.employee_ID_label.Click += new System.EventHandler(this.label1_Click);
             // 
             // FindCustomerButtn
             // 
-            this.FindCustomerButtn.Location = new System.Drawing.Point(16, 275);
+            this.FindCustomerButtn.Location = new System.Drawing.Point(12, 399);
             this.FindCustomerButtn.Name = "FindCustomerButtn";
             this.FindCustomerButtn.Size = new System.Drawing.Size(303, 35);
             this.FindCustomerButtn.TabIndex = 2;
@@ -409,12 +368,22 @@
             this.FindCustomerButtn.UseVisualStyleBackColor = true;
             this.FindCustomerButtn.Click += new System.EventHandler(this.FindCustomerButtn_Click);
             // 
-            // CIDtextBox
+            // employee_ID_textbox
             // 
-            this.CIDtextBox.Location = new System.Drawing.Point(177, 59);
-            this.CIDtextBox.Name = "CIDtextBox";
-            this.CIDtextBox.Size = new System.Drawing.Size(142, 26);
-            this.CIDtextBox.TabIndex = 3;
+            this.employee_ID_textbox.Location = new System.Drawing.Point(177, 59);
+            this.employee_ID_textbox.Name = "employee_ID_textbox";
+            this.employee_ID_textbox.Size = new System.Drawing.Size(142, 26);
+            this.employee_ID_textbox.TabIndex = 3;
+            // 
+            // back_button
+            // 
+            this.back_button.Location = new System.Drawing.Point(13, 12);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(75, 31);
+            this.back_button.TabIndex = 5;
+            this.back_button.Text = "Back";
+            this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // CIDErrorMessg
             // 
@@ -427,15 +396,19 @@
             this.CIDErrorMessg.Text = "Error enter valid customerr ID";
             this.CIDErrorMessg.Visible = false;
             // 
-            // back_button
+            // return_branch_ID_textbox
             // 
-            this.back_button.Location = new System.Drawing.Point(13, 12);
-            this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(75, 31);
-            this.back_button.TabIndex = 5;
-            this.back_button.Text = "Back";
-            this.back_button.UseVisualStyleBackColor = true;
-            this.back_button.Click += new System.EventHandler(this.back_button_Click);
+            this.return_branch_ID_textbox.Location = new System.Drawing.Point(147, 179);
+            this.return_branch_ID_textbox.Name = "return_branch_ID_textbox";
+            this.return_branch_ID_textbox.Size = new System.Drawing.Size(285, 26);
+            this.return_branch_ID_textbox.TabIndex = 19;
+            // 
+            // pickup_branch_ID_textbox
+            // 
+            this.pickup_branch_ID_textbox.Location = new System.Drawing.Point(147, 147);
+            this.pickup_branch_ID_textbox.Name = "pickup_branch_ID_textbox";
+            this.pickup_branch_ID_textbox.Size = new System.Drawing.Size(285, 26);
+            this.pickup_branch_ID_textbox.TabIndex = 20;
             // 
             // EmployeeRentalScreen
             // 
@@ -444,9 +417,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.CIDErrorMessg);
-            this.Controls.Add(this.CIDtextBox);
+            this.Controls.Add(this.employee_ID_textbox);
             this.Controls.Add(this.FindCustomerButtn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.employee_ID_label);
             this.Controls.Add(this.tabControl1);
             this.Name = "EmployeeRentalScreen";
             this.Text = "Form2";
@@ -456,8 +429,6 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,21 +439,16 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label employee_ID_label;
         private System.Windows.Forms.Button FindCustomerButtn;
-        private System.Windows.Forms.TextBox CIDtextBox;
-        private System.Windows.Forms.Label CIDErrorMessg;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox PhoneNumCtab;
-        private System.Windows.Forms.TextBox AddressCtab;
-        private System.Windows.Forms.TextBox NameCtab;
-        private System.Windows.Forms.TextBox MembershipCtab;
-        private System.Windows.Forms.TextBox CIDtextboxCtab;
+        private System.Windows.Forms.TextBox employee_ID_textbox;
+        private System.Windows.Forms.Label Pickup_date_Label;
+        private System.Windows.Forms.Label Pickup_branch_label;
+        private System.Windows.Forms.Label Return_date_label;
+        private System.Windows.Forms.Label Customer_ID_label;
+        private System.Windows.Forms.Label Rental_ID_Label;
+        private System.Windows.Forms.TextBox customer_ID_textbox;
+        private System.Windows.Forms.TextBox rental_Id_textbox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -493,14 +459,17 @@
         private System.Windows.Forms.ComboBox ReturnBranchRental;
         private System.Windows.Forms.ComboBox PickupBranchRental;
         private System.Windows.Forms.ComboBox VehichleRTab;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox VehiclesAvailableCF;
-        private System.Windows.Forms.TextBox TotalPriceCF;
-        private System.Windows.Forms.TextBox AdditionalFeesCF;
-        private System.Windows.Forms.TextBox RentalPriceCF;
         private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.Label CIDErrorMessg;
+        private System.Windows.Forms.Button confirm_rental_button;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox vin_textbox;
+        private System.Windows.Forms.Label VIN_label;
+        private System.Windows.Forms.Label return_branch_label;
+        private System.Windows.Forms.DateTimePicker return_date_datepicker;
+        private System.Windows.Forms.DateTimePicker pickup_date_datepicker;
+        private System.Windows.Forms.TextBox pickup_branch_ID_textbox;
+        private System.Windows.Forms.TextBox return_branch_ID_textbox;
     }
 }

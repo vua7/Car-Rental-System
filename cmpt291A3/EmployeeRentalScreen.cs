@@ -50,7 +50,7 @@ namespace cmpt291A3
         private void FindCustomerButtn_Click(object sender, EventArgs e)
         {
             int i = 0;
-            int.TryParse(CIDtextBox.Text, out i);
+            int.TryParse(employee_ID_textbox.Text, out i);
             if (i == 0)
             {
                 CIDErrorMessg.Visible = true;
@@ -58,7 +58,7 @@ namespace cmpt291A3
             else {
                 CIDErrorMessg.Visible = false;
             }
-            CIDtextBox.Text = "";
+            employee_ID_textbox.Text = "";
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -77,6 +77,33 @@ namespace cmpt291A3
             Welcome ws = new Welcome();
             ws.ShowDialog();
             this.Close();
+        }
+
+        private void confirm_rental_button_Click(object sender, EventArgs e)
+        {
+            string rental_ID = rental_Id_textbox.Text;
+            DateTime pickup_date = pickup_date_datepicker.Value;
+            DateTime return_date = return_date_datepicker.Value;
+            string price = "";
+            string customer_ID = customer_ID_textbox.Text;
+            string employee_ID = employee_ID_textbox.Text;
+            string pickup_branch_ID = pickup_branch_ID_textbox.Text;
+            string return_branch_ID = return_branch_ID_textbox.Text;
+            string vin = vin_textbox.Text;
+
+            if (rental_ID == "") {
+                CIDErrorMessg.Text = "enter valid information";
+                CIDErrorMessg.Visible = true;
+            }
+            if (pickup_date.Date == return_date.Date)
+            {
+                CIDErrorMessg.Text = "enter valid information";
+                CIDErrorMessg.Visible = true;
+            }
+            if (customer_ID == "") {
+                CIDErrorMessg.Text = "enter valid information";
+                CIDErrorMessg.Visible = true;
+            }
         }
     }
 }
