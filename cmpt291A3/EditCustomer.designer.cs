@@ -29,6 +29,7 @@ namespace cmpt291A3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.customerIDLabel = new System.Windows.Forms.Label();
             this.customerFirstNameLabel = new System.Windows.Forms.Label();
             this.customerDrivingLicenseLabel = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@ namespace cmpt291A3
             this.updateCustomerButton = new System.Windows.Forms.Button();
             this.addCustomerButton = new System.Windows.Forms.Button();
             this.removeCustomerButton = new System.Windows.Forms.Button();
-            this.customerMembershipComboBox = new System.Windows.Forms.ComboBox();
             this.customerZIPTextBox = new System.Windows.Forms.TextBox();
             this.customerProvinceTextBox = new System.Windows.Forms.TextBox();
             this.customerFirstNameTextBox = new System.Windows.Forms.TextBox();
@@ -60,26 +60,30 @@ namespace cmpt291A3
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.customerGridView = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.First_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Last_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.License = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.membership = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aptNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.province = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.postalcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gROUP5291DataSet = new cmpt291A3.GROUP5291DataSet();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customersTableAdapter = new cmpt291A3.GROUP5291DataSetTableAdapters.CustomersTableAdapter();
+            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.drivinglicenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membershipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.streetnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.streetnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aptnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerMembershipStatusTextBox = new System.Windows.Forms.TextBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP5291DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // customerIDLabel
@@ -97,7 +101,7 @@ namespace cmpt291A3
             // 
             this.customerFirstNameLabel.AutoSize = true;
             this.customerFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerFirstNameLabel.Location = new System.Drawing.Point(28, 45);
+            this.customerFirstNameLabel.Location = new System.Drawing.Point(28, 49);
             this.customerFirstNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
             this.customerFirstNameLabel.Name = "customerFirstNameLabel";
             this.customerFirstNameLabel.Size = new System.Drawing.Size(108, 20);
@@ -218,7 +222,7 @@ namespace cmpt291A3
             // 
             this.updateCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateCustomerButton.Location = new System.Drawing.Point(222, 314);
-            this.updateCustomerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateCustomerButton.Margin = new System.Windows.Forms.Padding(4);
             this.updateCustomerButton.Name = "updateCustomerButton";
             this.updateCustomerButton.Size = new System.Drawing.Size(133, 62);
             this.updateCustomerButton.TabIndex = 12;
@@ -230,7 +234,7 @@ namespace cmpt291A3
             // 
             this.addCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addCustomerButton.Location = new System.Drawing.Point(454, 314);
-            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(4);
             this.addCustomerButton.Name = "addCustomerButton";
             this.addCustomerButton.Size = new System.Drawing.Size(133, 62);
             this.addCustomerButton.TabIndex = 13;
@@ -242,27 +246,18 @@ namespace cmpt291A3
             // 
             this.removeCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeCustomerButton.Location = new System.Drawing.Point(677, 314);
-            this.removeCustomerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.removeCustomerButton.Margin = new System.Windows.Forms.Padding(4);
             this.removeCustomerButton.Name = "removeCustomerButton";
             this.removeCustomerButton.Size = new System.Drawing.Size(133, 62);
             this.removeCustomerButton.TabIndex = 14;
-            this.removeCustomerButton.Text = "Remove";
+            this.removeCustomerButton.Text = "Delete";
             this.removeCustomerButton.UseVisualStyleBackColor = true;
             this.removeCustomerButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.removeCustomerButton_MouseClick);
-            // 
-            // customerMembershipComboBox
-            // 
-            this.customerMembershipComboBox.FormattingEnabled = true;
-            this.customerMembershipComboBox.Location = new System.Drawing.Point(243, 217);
-            this.customerMembershipComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.customerMembershipComboBox.Name = "customerMembershipComboBox";
-            this.customerMembershipComboBox.Size = new System.Drawing.Size(187, 24);
-            this.customerMembershipComboBox.TabIndex = 15;
             // 
             // customerZIPTextBox
             // 
             this.customerZIPTextBox.Location = new System.Drawing.Point(795, 227);
-            this.customerZIPTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerZIPTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerZIPTextBox.Name = "customerZIPTextBox";
             this.customerZIPTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerZIPTextBox.TabIndex = 16;
@@ -270,15 +265,15 @@ namespace cmpt291A3
             // customerProvinceTextBox
             // 
             this.customerProvinceTextBox.Location = new System.Drawing.Point(795, 182);
-            this.customerProvinceTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerProvinceTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerProvinceTextBox.Name = "customerProvinceTextBox";
             this.customerProvinceTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerProvinceTextBox.TabIndex = 17;
             // 
             // customerFirstNameTextBox
             // 
-            this.customerFirstNameTextBox.Location = new System.Drawing.Point(243, 45);
-            this.customerFirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerFirstNameTextBox.Location = new System.Drawing.Point(243, 49);
+            this.customerFirstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerFirstNameTextBox.Name = "customerFirstNameTextBox";
             this.customerFirstNameTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerFirstNameTextBox.TabIndex = 18;
@@ -286,7 +281,7 @@ namespace cmpt291A3
             // customerCityTextBox
             // 
             this.customerCityTextBox.Location = new System.Drawing.Point(795, 137);
-            this.customerCityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerCityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerCityTextBox.Name = "customerCityTextBox";
             this.customerCityTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerCityTextBox.TabIndex = 19;
@@ -294,7 +289,7 @@ namespace cmpt291A3
             // customerApartmentNumberTextBox
             // 
             this.customerApartmentNumberTextBox.Location = new System.Drawing.Point(795, 92);
-            this.customerApartmentNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerApartmentNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerApartmentNumberTextBox.Name = "customerApartmentNumberTextBox";
             this.customerApartmentNumberTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerApartmentNumberTextBox.TabIndex = 20;
@@ -302,7 +297,7 @@ namespace cmpt291A3
             // customerStreetNameTextBox
             // 
             this.customerStreetNameTextBox.Location = new System.Drawing.Point(795, 7);
-            this.customerStreetNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerStreetNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerStreetNameTextBox.Name = "customerStreetNameTextBox";
             this.customerStreetNameTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerStreetNameTextBox.TabIndex = 21;
@@ -310,7 +305,7 @@ namespace cmpt291A3
             // customerStreetNumberTextBox
             // 
             this.customerStreetNumberTextBox.Location = new System.Drawing.Point(795, 47);
-            this.customerStreetNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerStreetNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerStreetNumberTextBox.Name = "customerStreetNumberTextBox";
             this.customerStreetNumberTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerStreetNumberTextBox.TabIndex = 22;
@@ -318,7 +313,7 @@ namespace cmpt291A3
             // customerIDTextBox
             // 
             this.customerIDTextBox.Location = new System.Drawing.Point(243, 13);
-            this.customerIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerIDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerIDTextBox.Name = "customerIDTextBox";
             this.customerIDTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerIDTextBox.TabIndex = 23;
@@ -326,7 +321,7 @@ namespace cmpt291A3
             // customerLastNameTextBox
             // 
             this.customerLastNameTextBox.Location = new System.Drawing.Point(243, 89);
-            this.customerLastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerLastNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerLastNameTextBox.Name = "customerLastNameTextBox";
             this.customerLastNameTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerLastNameTextBox.TabIndex = 24;
@@ -334,7 +329,7 @@ namespace cmpt291A3
             // customerDrivingLicenseTextBox
             // 
             this.customerDrivingLicenseTextBox.Location = new System.Drawing.Point(243, 133);
-            this.customerDrivingLicenseTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerDrivingLicenseTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerDrivingLicenseTextBox.Name = "customerDrivingLicenseTextBox";
             this.customerDrivingLicenseTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerDrivingLicenseTextBox.TabIndex = 25;
@@ -342,7 +337,7 @@ namespace cmpt291A3
             // customerPhoneNumberTextBox
             // 
             this.customerPhoneNumberTextBox.Location = new System.Drawing.Point(243, 174);
-            this.customerPhoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerPhoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.customerPhoneNumberTextBox.Name = "customerPhoneNumberTextBox";
             this.customerPhoneNumberTextBox.Size = new System.Drawing.Size(187, 22);
             this.customerPhoneNumberTextBox.TabIndex = 26;
@@ -351,7 +346,7 @@ namespace cmpt291A3
             // 
             this.customerEditConfirmationLabel.AutoSize = true;
             this.customerEditConfirmationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerEditConfirmationLabel.Location = new System.Drawing.Point(374, 422);
+            this.customerEditConfirmationLabel.Location = new System.Drawing.Point(334, 422);
             this.customerEditConfirmationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.customerEditConfirmationLabel.Name = "customerEditConfirmationLabel";
             this.customerEditConfirmationLabel.Size = new System.Drawing.Size(297, 29);
@@ -372,6 +367,8 @@ namespace cmpt291A3
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.backButton);
+            this.tabPage1.Controls.Add(this.customerMembershipStatusTextBox);
             this.tabPage1.Controls.Add(this.customerEditConfirmationLabel);
             this.tabPage1.Controls.Add(this.customerIDLabel);
             this.tabPage1.Controls.Add(this.removeCustomerButton);
@@ -389,7 +386,6 @@ namespace cmpt291A3
             this.tabPage1.Controls.Add(this.customerLastNameLabel);
             this.tabPage1.Controls.Add(this.customerLastNameTextBox);
             this.tabPage1.Controls.Add(this.customerDrivingLicenseLabel);
-            this.tabPage1.Controls.Add(this.customerMembershipComboBox);
             this.tabPage1.Controls.Add(this.customerIDTextBox);
             this.tabPage1.Controls.Add(this.customerPhoneNumberLabel);
             this.tabPage1.Controls.Add(this.customerZIPLabel);
@@ -402,158 +398,174 @@ namespace cmpt291A3
             this.tabPage1.Controls.Add(this.customerStreetNumberLabel);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1010, 490);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add/Edit";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.customerGridView);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1010, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Query";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(744, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(436, 388);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(47, 387);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(331, 24);
-            this.comboBox1.TabIndex = 1;
-            // 
             // customerGridView
             // 
+            this.customerGridView.AutoGenerateColumns = false;
             this.customerGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.First_Name,
-            this.Last_Name,
-            this.License,
-            this.membership,
-            this.stName,
-            this.stNo,
-            this.aptNum,
-            this.cityName,
-            this.province,
-            this.postalcode,
-            this.phone});
-            this.customerGridView.Location = new System.Drawing.Point(24, 18);
+            this.customerIDDataGridViewTextBoxColumn,
+            this.firstnameDataGridViewTextBoxColumn,
+            this.lastnameDataGridViewTextBoxColumn,
+            this.drivinglicenseDataGridViewTextBoxColumn,
+            this.membershipDataGridViewTextBoxColumn,
+            this.streetnameDataGridViewTextBoxColumn,
+            this.streetnumberDataGridViewTextBoxColumn,
+            this.aptnumberDataGridViewTextBoxColumn,
+            this.cityDataGridViewTextBoxColumn,
+            this.provinceDataGridViewTextBoxColumn,
+            this.zipDataGridViewTextBoxColumn,
+            this.phonenumberDataGridViewTextBoxColumn});
+            this.customerGridView.DataSource = this.customersBindingSource;
+            this.customerGridView.Location = new System.Drawing.Point(6, 6);
             this.customerGridView.Name = "customerGridView";
             this.customerGridView.RowHeadersWidth = 51;
             this.customerGridView.RowTemplate.Height = 24;
-            this.customerGridView.Size = new System.Drawing.Size(945, 316);
+            this.customerGridView.Size = new System.Drawing.Size(998, 478);
             this.customerGridView.TabIndex = 0;
             // 
-            // ID
+            // gROUP5291DataSet
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.Width = 125;
+            this.gROUP5291DataSet.DataSetName = "GROUP5291DataSet";
+            this.gROUP5291DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // First_Name
+            // customersBindingSource
             // 
-            this.First_Name.HeaderText = "First Name";
-            this.First_Name.MinimumWidth = 6;
-            this.First_Name.Name = "First_Name";
-            this.First_Name.Width = 125;
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.gROUP5291DataSet;
             // 
-            // Last_Name
+            // customersTableAdapter
             // 
-            this.Last_Name.HeaderText = "Last Name";
-            this.Last_Name.MinimumWidth = 6;
-            this.Last_Name.Name = "Last_Name";
-            this.Last_Name.Width = 125;
+            this.customersTableAdapter.ClearBeforeFill = true;
             // 
-            // License
+            // customerIDDataGridViewTextBoxColumn
             // 
-            this.License.HeaderText = "License";
-            this.License.MinimumWidth = 6;
-            this.License.Name = "License";
-            this.License.Width = 125;
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "Customer ID";
+            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            this.customerIDDataGridViewTextBoxColumn.Width = 125;
             // 
-            // membership
+            // firstnameDataGridViewTextBoxColumn
             // 
-            this.membership.HeaderText = "Membership";
-            this.membership.MinimumWidth = 6;
-            this.membership.Name = "membership";
-            this.membership.Width = 125;
+            this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name";
+            this.firstnameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.firstnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
+            this.firstnameDataGridViewTextBoxColumn.Width = 125;
             // 
-            // stName
+            // lastnameDataGridViewTextBoxColumn
             // 
-            this.stName.HeaderText = "Street Name";
-            this.stName.MinimumWidth = 6;
-            this.stName.Name = "stName";
-            this.stName.Width = 125;
+            this.lastnameDataGridViewTextBoxColumn.DataPropertyName = "last_name";
+            this.lastnameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
+            this.lastnameDataGridViewTextBoxColumn.Width = 125;
             // 
-            // stNo
+            // drivinglicenseDataGridViewTextBoxColumn
             // 
-            this.stNo.HeaderText = "Street Number";
-            this.stNo.MinimumWidth = 6;
-            this.stNo.Name = "stNo";
-            this.stNo.Width = 125;
+            this.drivinglicenseDataGridViewTextBoxColumn.DataPropertyName = "driving_license";
+            this.drivinglicenseDataGridViewTextBoxColumn.HeaderText = "Drivers License #";
+            this.drivinglicenseDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.drivinglicenseDataGridViewTextBoxColumn.Name = "drivinglicenseDataGridViewTextBoxColumn";
+            this.drivinglicenseDataGridViewTextBoxColumn.Width = 125;
             // 
-            // aptNum
+            // membershipDataGridViewTextBoxColumn
             // 
-            this.aptNum.HeaderText = "Apartment Number";
-            this.aptNum.MinimumWidth = 6;
-            this.aptNum.Name = "aptNum";
-            this.aptNum.Width = 125;
+            this.membershipDataGridViewTextBoxColumn.DataPropertyName = "membership";
+            this.membershipDataGridViewTextBoxColumn.HeaderText = "Membership";
+            this.membershipDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.membershipDataGridViewTextBoxColumn.Name = "membershipDataGridViewTextBoxColumn";
+            this.membershipDataGridViewTextBoxColumn.Width = 125;
             // 
-            // cityName
+            // streetnameDataGridViewTextBoxColumn
             // 
-            this.cityName.HeaderText = "City";
-            this.cityName.MinimumWidth = 6;
-            this.cityName.Name = "cityName";
-            this.cityName.Width = 125;
+            this.streetnameDataGridViewTextBoxColumn.DataPropertyName = "street_name";
+            this.streetnameDataGridViewTextBoxColumn.HeaderText = "Street Name";
+            this.streetnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.streetnameDataGridViewTextBoxColumn.Name = "streetnameDataGridViewTextBoxColumn";
+            this.streetnameDataGridViewTextBoxColumn.Width = 125;
             // 
-            // province
+            // streetnumberDataGridViewTextBoxColumn
             // 
-            this.province.HeaderText = "Province";
-            this.province.MinimumWidth = 6;
-            this.province.Name = "province";
-            this.province.Width = 125;
+            this.streetnumberDataGridViewTextBoxColumn.DataPropertyName = "street_number";
+            this.streetnumberDataGridViewTextBoxColumn.HeaderText = "Street Number";
+            this.streetnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.streetnumberDataGridViewTextBoxColumn.Name = "streetnumberDataGridViewTextBoxColumn";
+            this.streetnumberDataGridViewTextBoxColumn.Width = 125;
             // 
-            // postalcode
+            // aptnumberDataGridViewTextBoxColumn
             // 
-            this.postalcode.HeaderText = "Postal Code";
-            this.postalcode.MinimumWidth = 6;
-            this.postalcode.Name = "postalcode";
-            this.postalcode.Width = 125;
+            this.aptnumberDataGridViewTextBoxColumn.DataPropertyName = "apt_number";
+            this.aptnumberDataGridViewTextBoxColumn.HeaderText = "Appartment Number";
+            this.aptnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.aptnumberDataGridViewTextBoxColumn.Name = "aptnumberDataGridViewTextBoxColumn";
+            this.aptnumberDataGridViewTextBoxColumn.Width = 125;
             // 
-            // phone
+            // cityDataGridViewTextBoxColumn
             // 
-            this.phone.HeaderText = "Phone Number";
-            this.phone.MinimumWidth = 6;
-            this.phone.Name = "phone";
-            this.phone.Width = 125;
+            this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
+            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
+            this.cityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            this.cityDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // provinceDataGridViewTextBoxColumn
+            // 
+            this.provinceDataGridViewTextBoxColumn.DataPropertyName = "province";
+            this.provinceDataGridViewTextBoxColumn.HeaderText = "Province";
+            this.provinceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.provinceDataGridViewTextBoxColumn.Name = "provinceDataGridViewTextBoxColumn";
+            this.provinceDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zipDataGridViewTextBoxColumn
+            // 
+            this.zipDataGridViewTextBoxColumn.DataPropertyName = "zip";
+            this.zipDataGridViewTextBoxColumn.HeaderText = "Zip";
+            this.zipDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zipDataGridViewTextBoxColumn.Name = "zipDataGridViewTextBoxColumn";
+            this.zipDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // phonenumberDataGridViewTextBoxColumn
+            // 
+            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
+            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Phone Number";
+            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
+            this.phonenumberDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // customerMembershipStatusTextBox
+            // 
+            this.customerMembershipStatusTextBox.Location = new System.Drawing.Point(243, 222);
+            this.customerMembershipStatusTextBox.Name = "customerMembershipStatusTextBox";
+            this.customerMembershipStatusTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerMembershipStatusTextBox.TabIndex = 28;
+            // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(18, 451);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.TabIndex = 29;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // EditCustomer
             // 
@@ -561,7 +573,7 @@ namespace cmpt291A3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditCustomer";
             this.Text = "Edit Customer";
             this.Load += new System.EventHandler(this.EditCustomer_Load);
@@ -569,8 +581,9 @@ namespace cmpt291A3
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gROUP5291DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -592,7 +605,6 @@ namespace cmpt291A3
         private System.Windows.Forms.Button updateCustomerButton;
         private System.Windows.Forms.Button addCustomerButton;
         private System.Windows.Forms.Button removeCustomerButton;
-        private System.Windows.Forms.ComboBox customerMembershipComboBox;
         private System.Windows.Forms.TextBox customerZIPTextBox;
         private System.Windows.Forms.TextBox customerProvinceTextBox;
         private System.Windows.Forms.TextBox customerFirstNameTextBox;
@@ -609,20 +621,22 @@ namespace cmpt291A3
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView customerGridView;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn First_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Last_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn License;
-        private System.Windows.Forms.DataGridViewTextBoxColumn membership;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aptNum;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cityName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn province;
-        private System.Windows.Forms.DataGridViewTextBoxColumn postalcode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private GROUP5291DataSet gROUP5291DataSet;
+        private System.Windows.Forms.BindingSource customersBindingSource;
+        private GROUP5291DataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn drivinglicenseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn membershipDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn streetnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn streetnumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aptnumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zipDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.TextBox customerMembershipStatusTextBox;
     }
 }
