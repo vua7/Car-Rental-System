@@ -1,8 +1,8 @@
 use GROUP5291;
 
 begin try
-	drop table Customers;
 	drop table Rental_trans;
+	drop table Customers;
 	drop table Cars;
 	drop table Car_types;
 	drop table Employees;
@@ -44,8 +44,8 @@ create table Cars (
 	VIN varchar(17) primary key,
 	Color varchar(20),
 	Model varchar(30),
-	CarType varchar(30) foreign key references Car_types(CarType),
-	Branch_ID int foreign key references Branches(Branch_ID)
+	CarType varchar(30) foreign key references Car_types(CarType) ON DELETE CASCADE,
+	Branch_ID int foreign key references Branches(Branch_ID) ON DELETE CASCADE
 );
 
 create table Employees (
@@ -59,7 +59,7 @@ create table Employees (
 	province varchar(30),
 	zip varchar(7),
 	phone_number varchar(30),
-	Branch_ID int foreign key references Branches(Branch_ID)
+	Branch_ID int foreign key references Branches(Branch_ID) ON DELETE CASCADE
 );
 
 create table Rental_trans (
@@ -67,11 +67,11 @@ create table Rental_trans (
 	pickup_date varchar(30),
 	return_date varchar(30),
 	price int,
-	Customer_ID int,
-	Employee_ID int,
-	pickup_Branch_ID int foreign key references Branches(Branch_ID),
-	return_Branch_ID int foreign key references Branches(Branch_ID),
-	VIN varchar(17) foreign key references Cars(VIN)
+	Customer_ID int NULL foreign key references Customers(CustomerID),
+	Employee_ID int NULL foreign key references Employees(Employee_ID),
+	pickup_Branch_ID int NULL foreign key references Branches(Branch_ID),
+	return_Branch_ID int NULL foreign key references Branches(Branch_ID),
+	VIN varchar(17) NULL foreign key references Cars(VIN) ON DELETE CASCADE
 );
 
 insert into Customers values(1, 'John', 'Hancock', 123456789, 12345, 'newStreet', 15, 0, 'Edmonton', 'Alberta', 'A1B 2C3', '1234567890');
