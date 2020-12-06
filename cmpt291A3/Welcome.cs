@@ -54,7 +54,7 @@ namespace cmpt291A3
         private void reports_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ReportForm rf = new ReportForm();
+            ReportForm rf = new ReportForm(connectionString);
             rf.ShowDialog();
             this.Close();
         }
