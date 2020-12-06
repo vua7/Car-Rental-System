@@ -70,6 +70,12 @@
     <Compile Include="ActionSelection.designer.cs">
       <DependentUpon>ActionSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Branches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Branches.Designer.cs">
+      <DependentUpon>Branches.cs</DependentUpon>
+    </Compile>
     <Compile Include="carLookup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </Compile>
     <EmbeddedResource Include="ActionSelection.resx">
       <DependentUpon>ActionSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branches.resx">
+      <DependentUpon>Branches.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="carLookup.resx">
       <DependentUpon>carLookup.cs</DependentUpon>
