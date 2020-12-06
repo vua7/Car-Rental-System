@@ -66,5 +66,13 @@ namespace cmpt291A3
             er.ShowDialog();
             this.Close();
         }
+
+        private void branches_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Branches er = new Branches(connectionString);
+            er.ShowDialog();
+            this.Close();
+        }
     }
 }
