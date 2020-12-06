@@ -74,5 +74,13 @@ namespace cmpt291A3
             er.ShowDialog();
             this.Close();
         }
+
+        private void employees_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Employees er = new Employees(connectionString);
+            er.ShowDialog();
+            this.Close();
+        }
     }
 }
