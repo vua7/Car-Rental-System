@@ -53,6 +53,9 @@ namespace cmpt291A3
             this.label1 = new System.Windows.Forms.Label();
             this.queryPage = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gROUP5291DataSet = new cmpt291A3.GROUP5291DataSet();
+            this.branchesTableAdapter = new cmpt291A3.GROUP5291DataSetTableAdapters.BranchesTableAdapter();
             this.branchIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.streetnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.streetnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,9 +63,6 @@ namespace cmpt291A3
             this.provinceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gROUP5291DataSet = new cmpt291A3.GROUP5291DataSet();
-            this.branchesTableAdapter = new cmpt291A3.GROUP5291DataSetTableAdapters.BranchesTableAdapter();
             this.tabControl1.SuspendLayout();
             this.addEditPage.SuspendLayout();
             this.queryPage.SuspendLayout();
@@ -78,7 +78,7 @@ namespace cmpt291A3
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 426);
+            this.tabControl1.Size = new System.Drawing.Size(858, 426);
             this.tabControl1.TabIndex = 0;
             // 
             // addEditPage
@@ -105,7 +105,7 @@ namespace cmpt291A3
             this.addEditPage.Location = new System.Drawing.Point(4, 25);
             this.addEditPage.Name = "addEditPage";
             this.addEditPage.Padding = new System.Windows.Forms.Padding(3);
-            this.addEditPage.Size = new System.Drawing.Size(768, 397);
+            this.addEditPage.Size = new System.Drawing.Size(850, 397);
             this.addEditPage.TabIndex = 0;
             this.addEditPage.Text = "Add/Edit";
             this.addEditPage.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@ namespace cmpt291A3
             // 
             this.branchConfirmationLabel.AutoSize = true;
             this.branchConfirmationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.branchConfirmationLabel.Location = new System.Drawing.Point(285, 354);
+            this.branchConfirmationLabel.Location = new System.Drawing.Point(322, 354);
             this.branchConfirmationLabel.Name = "branchConfirmationLabel";
             this.branchConfirmationLabel.Size = new System.Drawing.Size(232, 25);
             this.branchConfirmationLabel.TabIndex = 18;
@@ -133,7 +133,7 @@ namespace cmpt291A3
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(514, 259);
+            this.deleteButton.Location = new System.Drawing.Point(606, 259);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(134, 59);
             this.deleteButton.TabIndex = 16;
@@ -143,7 +143,7 @@ namespace cmpt291A3
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(326, 259);
+            this.addButton.Location = new System.Drawing.Point(383, 259);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(134, 59);
             this.addButton.TabIndex = 15;
@@ -163,21 +163,21 @@ namespace cmpt291A3
             // 
             // phoneNumberTextBox
             // 
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(573, 144);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(628, 144);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Size = new System.Drawing.Size(177, 22);
             this.phoneNumberTextBox.TabIndex = 13;
             // 
             // zipTextBox
             // 
-            this.zipTextBox.Location = new System.Drawing.Point(573, 98);
+            this.zipTextBox.Location = new System.Drawing.Point(628, 96);
             this.zipTextBox.Name = "zipTextBox";
             this.zipTextBox.Size = new System.Drawing.Size(177, 22);
             this.zipTextBox.TabIndex = 12;
             // 
             // provinceTextBox
             // 
-            this.provinceTextBox.Location = new System.Drawing.Point(573, 50);
+            this.provinceTextBox.Location = new System.Drawing.Point(628, 50);
             this.provinceTextBox.Name = "provinceTextBox";
             this.provinceTextBox.Size = new System.Drawing.Size(177, 22);
             this.provinceTextBox.TabIndex = 11;
@@ -191,14 +191,14 @@ namespace cmpt291A3
             // 
             // StreetNumberTextBox
             // 
-            this.StreetNumberTextBox.Location = new System.Drawing.Point(192, 142);
+            this.StreetNumberTextBox.Location = new System.Drawing.Point(192, 144);
             this.StreetNumberTextBox.Name = "StreetNumberTextBox";
             this.StreetNumberTextBox.Size = new System.Drawing.Size(177, 22);
             this.StreetNumberTextBox.TabIndex = 9;
             // 
             // streetNameTextBox
             // 
-            this.streetNameTextBox.Location = new System.Drawing.Point(192, 96);
+            this.streetNameTextBox.Location = new System.Drawing.Point(192, 98);
             this.streetNameTextBox.Name = "streetNameTextBox";
             this.streetNameTextBox.Size = new System.Drawing.Size(177, 22);
             this.streetNameTextBox.TabIndex = 8;
@@ -214,7 +214,7 @@ namespace cmpt291A3
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(429, 144);
+            this.label7.Location = new System.Drawing.Point(416, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(138, 20);
             this.label7.TabIndex = 6;
@@ -224,7 +224,7 @@ namespace cmpt291A3
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(429, 98);
+            this.label6.Location = new System.Drawing.Point(416, 98);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 20);
             this.label6.TabIndex = 5;
@@ -234,7 +234,7 @@ namespace cmpt291A3
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(429, 52);
+            this.label5.Location = new System.Drawing.Point(416, 52);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 4;
@@ -244,7 +244,7 @@ namespace cmpt291A3
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 195);
+            this.label4.Location = new System.Drawing.Point(20, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 3;
@@ -254,7 +254,7 @@ namespace cmpt291A3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 144);
+            this.label3.Location = new System.Drawing.Point(20, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 2;
@@ -264,7 +264,7 @@ namespace cmpt291A3
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 98);
+            this.label2.Location = new System.Drawing.Point(20, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 1;
@@ -274,7 +274,7 @@ namespace cmpt291A3
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 52);
+            this.label1.Location = new System.Drawing.Point(20, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 0;
@@ -286,7 +286,7 @@ namespace cmpt291A3
             this.queryPage.Location = new System.Drawing.Point(4, 25);
             this.queryPage.Name = "queryPage";
             this.queryPage.Padding = new System.Windows.Forms.Padding(3);
-            this.queryPage.Size = new System.Drawing.Size(768, 397);
+            this.queryPage.Size = new System.Drawing.Size(850, 397);
             this.queryPage.TabIndex = 1;
             this.queryPage.Text = "Query";
             this.queryPage.UseVisualStyleBackColor = true;
@@ -310,64 +310,8 @@ namespace cmpt291A3
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(756, 385);
+            this.dataGridView1.Size = new System.Drawing.Size(838, 385);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // branchIDDataGridViewTextBoxColumn
-            // 
-            this.branchIDDataGridViewTextBoxColumn.DataPropertyName = "Branch_ID";
-            this.branchIDDataGridViewTextBoxColumn.HeaderText = "Branch_ID";
-            this.branchIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.branchIDDataGridViewTextBoxColumn.Name = "branchIDDataGridViewTextBoxColumn";
-            this.branchIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // streetnameDataGridViewTextBoxColumn
-            // 
-            this.streetnameDataGridViewTextBoxColumn.DataPropertyName = "street_name";
-            this.streetnameDataGridViewTextBoxColumn.HeaderText = "street_name";
-            this.streetnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.streetnameDataGridViewTextBoxColumn.Name = "streetnameDataGridViewTextBoxColumn";
-            this.streetnameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // streetnumberDataGridViewTextBoxColumn
-            // 
-            this.streetnumberDataGridViewTextBoxColumn.DataPropertyName = "street_number";
-            this.streetnumberDataGridViewTextBoxColumn.HeaderText = "street_number";
-            this.streetnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.streetnumberDataGridViewTextBoxColumn.Name = "streetnumberDataGridViewTextBoxColumn";
-            this.streetnumberDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "city";
-            this.cityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            this.cityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // provinceDataGridViewTextBoxColumn
-            // 
-            this.provinceDataGridViewTextBoxColumn.DataPropertyName = "province";
-            this.provinceDataGridViewTextBoxColumn.HeaderText = "province";
-            this.provinceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.provinceDataGridViewTextBoxColumn.Name = "provinceDataGridViewTextBoxColumn";
-            this.provinceDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // zipDataGridViewTextBoxColumn
-            // 
-            this.zipDataGridViewTextBoxColumn.DataPropertyName = "zip";
-            this.zipDataGridViewTextBoxColumn.HeaderText = "zip";
-            this.zipDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.zipDataGridViewTextBoxColumn.Name = "zipDataGridViewTextBoxColumn";
-            this.zipDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phonenumberDataGridViewTextBoxColumn
-            // 
-            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
-            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "phone_number";
-            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
-            this.phonenumberDataGridViewTextBoxColumn.Width = 125;
             // 
             // branchesBindingSource
             // 
@@ -383,11 +327,67 @@ namespace cmpt291A3
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
+            // branchIDDataGridViewTextBoxColumn
+            // 
+            this.branchIDDataGridViewTextBoxColumn.DataPropertyName = "Branch_ID";
+            this.branchIDDataGridViewTextBoxColumn.HeaderText = "Branch ID";
+            this.branchIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.branchIDDataGridViewTextBoxColumn.Name = "branchIDDataGridViewTextBoxColumn";
+            this.branchIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // streetnameDataGridViewTextBoxColumn
+            // 
+            this.streetnameDataGridViewTextBoxColumn.DataPropertyName = "street_name";
+            this.streetnameDataGridViewTextBoxColumn.HeaderText = "Street Name";
+            this.streetnameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.streetnameDataGridViewTextBoxColumn.Name = "streetnameDataGridViewTextBoxColumn";
+            this.streetnameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // streetnumberDataGridViewTextBoxColumn
+            // 
+            this.streetnumberDataGridViewTextBoxColumn.DataPropertyName = "street_number";
+            this.streetnumberDataGridViewTextBoxColumn.HeaderText = "Street Number";
+            this.streetnumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.streetnumberDataGridViewTextBoxColumn.Name = "streetnumberDataGridViewTextBoxColumn";
+            this.streetnumberDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cityDataGridViewTextBoxColumn
+            // 
+            this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
+            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
+            this.cityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            this.cityDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // provinceDataGridViewTextBoxColumn
+            // 
+            this.provinceDataGridViewTextBoxColumn.DataPropertyName = "province";
+            this.provinceDataGridViewTextBoxColumn.HeaderText = "Province";
+            this.provinceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.provinceDataGridViewTextBoxColumn.Name = "provinceDataGridViewTextBoxColumn";
+            this.provinceDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // zipDataGridViewTextBoxColumn
+            // 
+            this.zipDataGridViewTextBoxColumn.DataPropertyName = "zip";
+            this.zipDataGridViewTextBoxColumn.HeaderText = "Zip";
+            this.zipDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.zipDataGridViewTextBoxColumn.Name = "zipDataGridViewTextBoxColumn";
+            this.zipDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // phonenumberDataGridViewTextBoxColumn
+            // 
+            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
+            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Phone Number";
+            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
+            this.phonenumberDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Branches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(882, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "Branches";
             this.Text = "Branches";
@@ -429,6 +429,8 @@ namespace cmpt291A3
         private GROUP5291DataSet gROUP5291DataSet;
         private System.Windows.Forms.BindingSource branchesBindingSource;
         private GROUP5291DataSetTableAdapters.BranchesTableAdapter branchesTableAdapter;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Label branchConfirmationLabel;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn streetnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn streetnumberDataGridViewTextBoxColumn;
@@ -436,7 +438,5 @@ namespace cmpt291A3
         private System.Windows.Forms.DataGridViewTextBoxColumn provinceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn zipDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.Label branchConfirmationLabel;
     }
 }

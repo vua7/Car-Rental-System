@@ -67,7 +67,7 @@ namespace cmpt291A3
             try
             {
                 int rowsAffected = myCommand.ExecuteNonQuery();
-                branchConfirmationLabel.Text = "Successfully Added " + rowsAffected + " rows";
+                branchConfirmationLabel.Text = "Successfully Added " + rowsAffected + " Row(s)";
                 branchConfirmationLabel.Show();
                 //update the gridview on query page
                 Branches_Load(sender, e);
@@ -103,7 +103,7 @@ namespace cmpt291A3
             try
             {
                 int rowsAffected = myCommand.ExecuteNonQuery();
-                branchConfirmationLabel.Text = "Successfully Updated " + rowsAffected + " rows";
+                branchConfirmationLabel.Text = "Successfully Updated " + rowsAffected + " Row(s)";
                 branchConfirmationLabel.Show();
                 //update the gridview on query page
                 Branches_Load(sender, e);
@@ -137,14 +137,14 @@ namespace cmpt291A3
             try 
             {
                 int rowsAffected = myCommand.ExecuteNonQuery();
-                branchConfirmationLabel.Text = "Successfully Deleted " + rowsAffected + " rows";
+                branchConfirmationLabel.Text = "Successfully Deleted " + rowsAffected + " Row(s)";
                 branchConfirmationLabel.Show();
                 //update the gridview on query page
                 Branches_Load(sender, e);
             }
             catch (Exception)
             {
-                branchConfirmationLabel.Text = "Enter valid Branch ID!";
+                branchConfirmationLabel.Text = "Enter Valid Information";
                 branchConfirmationLabel.Show();
             }
         }
