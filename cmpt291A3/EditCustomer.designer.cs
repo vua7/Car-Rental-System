@@ -85,11 +85,11 @@ namespace cmpt291A3
             // customerIDLabel
             // 
             this.customerIDLabel.AutoSize = true;
-            this.customerIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerIDLabel.Location = new System.Drawing.Point(28, 18);
-            this.customerIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerIDLabel.Location = new System.Drawing.Point(32, 22);
+            this.customerIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerIDLabel.Name = "customerIDLabel";
-            this.customerIDLabel.Size = new System.Drawing.Size(121, 20);
+            this.customerIDLabel.Size = new System.Drawing.Size(139, 25);
             this.customerIDLabel.TabIndex = 0;
             this.customerIDLabel.Text = "Customer ID:";
             // 
@@ -97,10 +97,10 @@ namespace cmpt291A3
             // 
             this.customerFirstNameLabel.AutoSize = true;
             this.customerFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerFirstNameLabel.Location = new System.Drawing.Point(28, 45);
-            this.customerFirstNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerFirstNameLabel.Location = new System.Drawing.Point(32, 56);
+            this.customerFirstNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerFirstNameLabel.Name = "customerFirstNameLabel";
-            this.customerFirstNameLabel.Size = new System.Drawing.Size(108, 20);
+            this.customerFirstNameLabel.Size = new System.Drawing.Size(123, 25);
             this.customerFirstNameLabel.TabIndex = 1;
             this.customerFirstNameLabel.Text = "First Name:";
             // 
@@ -108,10 +108,10 @@ namespace cmpt291A3
             // 
             this.customerDrivingLicenseLabel.AutoSize = true;
             this.customerDrivingLicenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerDrivingLicenseLabel.Location = new System.Drawing.Point(28, 132);
-            this.customerDrivingLicenseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerDrivingLicenseLabel.Location = new System.Drawing.Point(32, 165);
+            this.customerDrivingLicenseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerDrivingLicenseLabel.Name = "customerDrivingLicenseLabel";
-            this.customerDrivingLicenseLabel.Size = new System.Drawing.Size(147, 20);
+            this.customerDrivingLicenseLabel.Size = new System.Drawing.Size(167, 25);
             this.customerDrivingLicenseLabel.TabIndex = 2;
             this.customerDrivingLicenseLabel.Text = "Driving License:";
             // 
@@ -119,10 +119,10 @@ namespace cmpt291A3
             // 
             this.customerMembershipLabel.AutoSize = true;
             this.customerMembershipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerMembershipLabel.Location = new System.Drawing.Point(28, 224);
-            this.customerMembershipLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerMembershipLabel.Location = new System.Drawing.Point(32, 280);
+            this.customerMembershipLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerMembershipLabel.Name = "customerMembershipLabel";
-            this.customerMembershipLabel.Size = new System.Drawing.Size(177, 20);
+            this.customerMembershipLabel.Size = new System.Drawing.Size(205, 25);
             this.customerMembershipLabel.TabIndex = 3;
             this.customerMembershipLabel.Text = "Membership Status:";
             // 
@@ -130,10 +130,10 @@ namespace cmpt291A3
             // 
             this.customerLastNameLabel.AutoSize = true;
             this.customerLastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerLastNameLabel.Location = new System.Drawing.Point(28, 87);
-            this.customerLastNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerLastNameLabel.Location = new System.Drawing.Point(32, 109);
+            this.customerLastNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerLastNameLabel.Name = "customerLastNameLabel";
-            this.customerLastNameLabel.Size = new System.Drawing.Size(106, 20);
+            this.customerLastNameLabel.Size = new System.Drawing.Size(122, 25);
             this.customerLastNameLabel.TabIndex = 4;
             this.customerLastNameLabel.Text = "Last Name:";
             // 
@@ -141,10 +141,10 @@ namespace cmpt291A3
             // 
             this.customerStreetNumberLabel.AutoSize = true;
             this.customerStreetNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerStreetNumberLabel.Location = new System.Drawing.Point(583, 47);
-            this.customerStreetNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerStreetNumberLabel.Location = new System.Drawing.Point(656, 59);
+            this.customerStreetNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerStreetNumberLabel.Name = "customerStreetNumberLabel";
-            this.customerStreetNumberLabel.Size = new System.Drawing.Size(137, 20);
+            this.customerStreetNumberLabel.Size = new System.Drawing.Size(158, 25);
             this.customerStreetNumberLabel.TabIndex = 5;
             this.customerStreetNumberLabel.Text = "Street Number:";
             // 
@@ -152,10 +152,10 @@ namespace cmpt291A3
             // 
             this.customerStreetNameLabel.AutoSize = true;
             this.customerStreetNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerStreetNameLabel.Location = new System.Drawing.Point(583, 15);
-            this.customerStreetNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerStreetNameLabel.Location = new System.Drawing.Point(656, 19);
+            this.customerStreetNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerStreetNameLabel.Name = "customerStreetNameLabel";
-            this.customerStreetNameLabel.Size = new System.Drawing.Size(120, 20);
+            this.customerStreetNameLabel.Size = new System.Drawing.Size(139, 25);
             this.customerStreetNameLabel.TabIndex = 6;
             this.customerStreetNameLabel.Text = "Street Name:";
             // 
@@ -163,10 +163,10 @@ namespace cmpt291A3
             // 
             this.customerApartmentNumberLabel.AutoSize = true;
             this.customerApartmentNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerApartmentNumberLabel.Location = new System.Drawing.Point(583, 92);
-            this.customerApartmentNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerApartmentNumberLabel.Location = new System.Drawing.Point(656, 115);
+            this.customerApartmentNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerApartmentNumberLabel.Name = "customerApartmentNumberLabel";
-            this.customerApartmentNumberLabel.Size = new System.Drawing.Size(172, 20);
+            this.customerApartmentNumberLabel.Size = new System.Drawing.Size(199, 25);
             this.customerApartmentNumberLabel.TabIndex = 7;
             this.customerApartmentNumberLabel.Text = "Apartment Number:";
             // 
@@ -174,10 +174,10 @@ namespace cmpt291A3
             // 
             this.customerCityLabel.AutoSize = true;
             this.customerCityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerCityLabel.Location = new System.Drawing.Point(583, 137);
-            this.customerCityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerCityLabel.Location = new System.Drawing.Point(656, 171);
+            this.customerCityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerCityLabel.Name = "customerCityLabel";
-            this.customerCityLabel.Size = new System.Drawing.Size(48, 20);
+            this.customerCityLabel.Size = new System.Drawing.Size(57, 25);
             this.customerCityLabel.TabIndex = 8;
             this.customerCityLabel.Text = "City:";
             // 
@@ -185,10 +185,10 @@ namespace cmpt291A3
             // 
             this.customerProvinceLabel.AutoSize = true;
             this.customerProvinceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerProvinceLabel.Location = new System.Drawing.Point(583, 182);
-            this.customerProvinceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerProvinceLabel.Location = new System.Drawing.Point(656, 228);
+            this.customerProvinceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerProvinceLabel.Name = "customerProvinceLabel";
-            this.customerProvinceLabel.Size = new System.Drawing.Size(88, 20);
+            this.customerProvinceLabel.Size = new System.Drawing.Size(103, 25);
             this.customerProvinceLabel.TabIndex = 9;
             this.customerProvinceLabel.Text = "Province:";
             // 
@@ -196,10 +196,10 @@ namespace cmpt291A3
             // 
             this.customerZIPLabel.AutoSize = true;
             this.customerZIPLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerZIPLabel.Location = new System.Drawing.Point(583, 227);
-            this.customerZIPLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerZIPLabel.Location = new System.Drawing.Point(656, 284);
+            this.customerZIPLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerZIPLabel.Name = "customerZIPLabel";
-            this.customerZIPLabel.Size = new System.Drawing.Size(42, 20);
+            this.customerZIPLabel.Size = new System.Drawing.Size(52, 25);
             this.customerZIPLabel.TabIndex = 10;
             this.customerZIPLabel.Text = "ZIP:";
             // 
@@ -207,20 +207,20 @@ namespace cmpt291A3
             // 
             this.customerPhoneNumberLabel.AutoSize = true;
             this.customerPhoneNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerPhoneNumberLabel.Location = new System.Drawing.Point(28, 176);
-            this.customerPhoneNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 25);
+            this.customerPhoneNumberLabel.Location = new System.Drawing.Point(32, 220);
+            this.customerPhoneNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 31);
             this.customerPhoneNumberLabel.Name = "customerPhoneNumberLabel";
-            this.customerPhoneNumberLabel.Size = new System.Drawing.Size(138, 20);
+            this.customerPhoneNumberLabel.Size = new System.Drawing.Size(162, 25);
             this.customerPhoneNumberLabel.TabIndex = 11;
             this.customerPhoneNumberLabel.Text = "Phone Number:";
             // 
             // updateCustomerButton
             // 
             this.updateCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateCustomerButton.Location = new System.Drawing.Point(222, 314);
-            this.updateCustomerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.updateCustomerButton.Location = new System.Drawing.Point(250, 392);
+            this.updateCustomerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.updateCustomerButton.Name = "updateCustomerButton";
-            this.updateCustomerButton.Size = new System.Drawing.Size(133, 62);
+            this.updateCustomerButton.Size = new System.Drawing.Size(150, 78);
             this.updateCustomerButton.TabIndex = 12;
             this.updateCustomerButton.Text = "Update";
             this.updateCustomerButton.UseVisualStyleBackColor = true;
@@ -229,10 +229,10 @@ namespace cmpt291A3
             // addCustomerButton
             // 
             this.addCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCustomerButton.Location = new System.Drawing.Point(454, 314);
-            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addCustomerButton.Location = new System.Drawing.Point(511, 392);
+            this.addCustomerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addCustomerButton.Name = "addCustomerButton";
-            this.addCustomerButton.Size = new System.Drawing.Size(133, 62);
+            this.addCustomerButton.Size = new System.Drawing.Size(150, 78);
             this.addCustomerButton.TabIndex = 13;
             this.addCustomerButton.Text = "Add";
             this.addCustomerButton.UseVisualStyleBackColor = true;
@@ -241,10 +241,10 @@ namespace cmpt291A3
             // removeCustomerButton
             // 
             this.removeCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeCustomerButton.Location = new System.Drawing.Point(677, 314);
-            this.removeCustomerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.removeCustomerButton.Location = new System.Drawing.Point(762, 392);
+            this.removeCustomerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.removeCustomerButton.Name = "removeCustomerButton";
-            this.removeCustomerButton.Size = new System.Drawing.Size(133, 62);
+            this.removeCustomerButton.Size = new System.Drawing.Size(150, 78);
             this.removeCustomerButton.TabIndex = 14;
             this.removeCustomerButton.Text = "Remove";
             this.removeCustomerButton.UseVisualStyleBackColor = true;
@@ -253,108 +253,108 @@ namespace cmpt291A3
             // customerMembershipComboBox
             // 
             this.customerMembershipComboBox.FormattingEnabled = true;
-            this.customerMembershipComboBox.Location = new System.Drawing.Point(243, 217);
-            this.customerMembershipComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerMembershipComboBox.Location = new System.Drawing.Point(273, 271);
+            this.customerMembershipComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerMembershipComboBox.Name = "customerMembershipComboBox";
-            this.customerMembershipComboBox.Size = new System.Drawing.Size(187, 24);
+            this.customerMembershipComboBox.Size = new System.Drawing.Size(210, 28);
             this.customerMembershipComboBox.TabIndex = 15;
             // 
             // customerZIPTextBox
             // 
-            this.customerZIPTextBox.Location = new System.Drawing.Point(795, 227);
-            this.customerZIPTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerZIPTextBox.Location = new System.Drawing.Point(894, 284);
+            this.customerZIPTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerZIPTextBox.Name = "customerZIPTextBox";
-            this.customerZIPTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerZIPTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerZIPTextBox.TabIndex = 16;
             // 
             // customerProvinceTextBox
             // 
-            this.customerProvinceTextBox.Location = new System.Drawing.Point(795, 182);
-            this.customerProvinceTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerProvinceTextBox.Location = new System.Drawing.Point(894, 228);
+            this.customerProvinceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerProvinceTextBox.Name = "customerProvinceTextBox";
-            this.customerProvinceTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerProvinceTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerProvinceTextBox.TabIndex = 17;
             // 
             // customerFirstNameTextBox
             // 
-            this.customerFirstNameTextBox.Location = new System.Drawing.Point(243, 45);
-            this.customerFirstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerFirstNameTextBox.Location = new System.Drawing.Point(273, 56);
+            this.customerFirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerFirstNameTextBox.Name = "customerFirstNameTextBox";
-            this.customerFirstNameTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerFirstNameTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerFirstNameTextBox.TabIndex = 18;
             // 
             // customerCityTextBox
             // 
-            this.customerCityTextBox.Location = new System.Drawing.Point(795, 137);
-            this.customerCityTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerCityTextBox.Location = new System.Drawing.Point(894, 171);
+            this.customerCityTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerCityTextBox.Name = "customerCityTextBox";
-            this.customerCityTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerCityTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerCityTextBox.TabIndex = 19;
             // 
             // customerApartmentNumberTextBox
             // 
-            this.customerApartmentNumberTextBox.Location = new System.Drawing.Point(795, 92);
-            this.customerApartmentNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerApartmentNumberTextBox.Location = new System.Drawing.Point(894, 115);
+            this.customerApartmentNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerApartmentNumberTextBox.Name = "customerApartmentNumberTextBox";
-            this.customerApartmentNumberTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerApartmentNumberTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerApartmentNumberTextBox.TabIndex = 20;
             // 
             // customerStreetNameTextBox
             // 
-            this.customerStreetNameTextBox.Location = new System.Drawing.Point(795, 7);
-            this.customerStreetNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerStreetNameTextBox.Location = new System.Drawing.Point(894, 9);
+            this.customerStreetNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerStreetNameTextBox.Name = "customerStreetNameTextBox";
-            this.customerStreetNameTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerStreetNameTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerStreetNameTextBox.TabIndex = 21;
             // 
             // customerStreetNumberTextBox
             // 
-            this.customerStreetNumberTextBox.Location = new System.Drawing.Point(795, 47);
-            this.customerStreetNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerStreetNumberTextBox.Location = new System.Drawing.Point(894, 59);
+            this.customerStreetNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerStreetNumberTextBox.Name = "customerStreetNumberTextBox";
-            this.customerStreetNumberTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerStreetNumberTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerStreetNumberTextBox.TabIndex = 22;
             // 
             // customerIDTextBox
             // 
-            this.customerIDTextBox.Location = new System.Drawing.Point(243, 13);
-            this.customerIDTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerIDTextBox.Location = new System.Drawing.Point(273, 16);
+            this.customerIDTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerIDTextBox.Name = "customerIDTextBox";
-            this.customerIDTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerIDTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerIDTextBox.TabIndex = 23;
             // 
             // customerLastNameTextBox
             // 
-            this.customerLastNameTextBox.Location = new System.Drawing.Point(243, 89);
-            this.customerLastNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerLastNameTextBox.Location = new System.Drawing.Point(273, 111);
+            this.customerLastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerLastNameTextBox.Name = "customerLastNameTextBox";
-            this.customerLastNameTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerLastNameTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerLastNameTextBox.TabIndex = 24;
             // 
             // customerDrivingLicenseTextBox
             // 
-            this.customerDrivingLicenseTextBox.Location = new System.Drawing.Point(243, 133);
-            this.customerDrivingLicenseTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerDrivingLicenseTextBox.Location = new System.Drawing.Point(273, 166);
+            this.customerDrivingLicenseTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerDrivingLicenseTextBox.Name = "customerDrivingLicenseTextBox";
-            this.customerDrivingLicenseTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerDrivingLicenseTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerDrivingLicenseTextBox.TabIndex = 25;
             // 
             // customerPhoneNumberTextBox
             // 
-            this.customerPhoneNumberTextBox.Location = new System.Drawing.Point(243, 174);
-            this.customerPhoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.customerPhoneNumberTextBox.Location = new System.Drawing.Point(273, 218);
+            this.customerPhoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerPhoneNumberTextBox.Name = "customerPhoneNumberTextBox";
-            this.customerPhoneNumberTextBox.Size = new System.Drawing.Size(187, 22);
+            this.customerPhoneNumberTextBox.Size = new System.Drawing.Size(210, 26);
             this.customerPhoneNumberTextBox.TabIndex = 26;
             // 
             // customerEditConfirmationLabel
             // 
             this.customerEditConfirmationLabel.AutoSize = true;
             this.customerEditConfirmationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerEditConfirmationLabel.Location = new System.Drawing.Point(374, 422);
+            this.customerEditConfirmationLabel.Location = new System.Drawing.Point(421, 528);
             this.customerEditConfirmationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.customerEditConfirmationLabel.Name = "customerEditConfirmationLabel";
-            this.customerEditConfirmationLabel.Size = new System.Drawing.Size(297, 29);
+            this.customerEditConfirmationLabel.Size = new System.Drawing.Size(345, 36);
             this.customerEditConfirmationLabel.TabIndex = 27;
             this.customerEditConfirmationLabel.Text = "<Confirmation Message>";
             this.customerEditConfirmationLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -364,10 +364,11 @@ namespace cmpt291A3
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(14, 15);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1018, 519);
+            this.tabControl1.Size = new System.Drawing.Size(1145, 649);
             this.tabControl1.TabIndex = 28;
             // 
             // tabPage1
@@ -400,10 +401,11 @@ namespace cmpt291A3
             this.tabPage1.Controls.Add(this.customerStreetNameLabel);
             this.tabPage1.Controls.Add(this.customerApartmentNumberLabel);
             this.tabPage1.Controls.Add(this.customerStreetNumberLabel);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1010, 490);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1137, 616);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add/Edit";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -414,19 +416,21 @@ namespace cmpt291A3
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.customerGridView);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1010, 490);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1137, 616);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Query";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(744, 387);
+            this.button1.Location = new System.Drawing.Point(837, 484);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(84, 29);
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -434,17 +438,19 @@ namespace cmpt291A3
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(436, 388);
+            this.textBox1.Location = new System.Drawing.Point(490, 485);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.Size = new System.Drawing.Size(206, 26);
             this.textBox1.TabIndex = 2;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(47, 387);
+            this.comboBox1.Location = new System.Drawing.Point(53, 484);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(331, 24);
+            this.comboBox1.Size = new System.Drawing.Size(372, 28);
             this.comboBox1.TabIndex = 1;
             // 
             // customerGridView
@@ -463,11 +469,12 @@ namespace cmpt291A3
             this.province,
             this.postalcode,
             this.phone});
-            this.customerGridView.Location = new System.Drawing.Point(24, 18);
+            this.customerGridView.Location = new System.Drawing.Point(27, 22);
+            this.customerGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customerGridView.Name = "customerGridView";
             this.customerGridView.RowHeadersWidth = 51;
             this.customerGridView.RowTemplate.Height = 24;
-            this.customerGridView.Size = new System.Drawing.Size(945, 316);
+            this.customerGridView.Size = new System.Drawing.Size(1063, 395);
             this.customerGridView.TabIndex = 0;
             // 
             // ID
@@ -556,13 +563,14 @@ namespace cmpt291A3
             // 
             // EditCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "EditCustomer";
             this.Text = "Edit Customer";
+            this.Load += new System.EventHandler(this.EditCustomer_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

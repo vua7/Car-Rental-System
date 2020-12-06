@@ -49,5 +49,22 @@ namespace cmpt291A3
             this.Close();
 
         }
+
+
+        private void reports_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReportForm rf = new ReportForm();
+            rf.ShowDialog();
+            this.Close();
+        }
+        
+        private void rentals_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EmployeeRentalScreen er = new EmployeeRentalScreen(connectionString);
+            er.ShowDialog();
+            this.Close();
+        }
     }
 }

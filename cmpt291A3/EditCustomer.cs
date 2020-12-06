@@ -132,5 +132,10 @@ namespace cmpt291A3
                 MessageBox.Show(e3.ToString(), "Error");
             }
         }
+
+        private void EditCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
