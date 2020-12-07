@@ -54,7 +54,7 @@ namespace cmpt291A3
         private void reports_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ReportForm rf = new ReportForm();
+            ReportForm rf = new ReportForm(connectionString);
             rf.ShowDialog();
             this.Close();
         }
@@ -80,6 +80,14 @@ namespace cmpt291A3
             this.Hide();
             EditVehicles ev = new EditVehicles(connectionString);
             ev.ShowDialog();
+            this.Close();
+        }
+
+        private void employees_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Employees er = new Employees(connectionString);
+            er.ShowDialog();
             this.Close();
         }
     }

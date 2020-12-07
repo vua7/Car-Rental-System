@@ -114,6 +114,7 @@ namespace cmpt291A3
             this.employees.TabIndex = 6;
             this.employees.Text = "Employees";
             this.employees.UseVisualStyleBackColor = true;
+            this.employees.Click += new System.EventHandler(this.employees_Click);
             // 
             // rentals
             // 
