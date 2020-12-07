@@ -48,14 +48,14 @@ namespace cmpt291A3
             // 
             // carBranchTextBox
             // 
-            this.carBranchTextBox.Location = new System.Drawing.Point(427, 49);
+            this.carBranchTextBox.Location = new System.Drawing.Point(139, 199);
             this.carBranchTextBox.Name = "carBranchTextBox";
             this.carBranchTextBox.Size = new System.Drawing.Size(150, 20);
             this.carBranchTextBox.TabIndex = 7;
             // 
             // carColorTextBox
             // 
-            this.carColorTextBox.Location = new System.Drawing.Point(139, 199);
+            this.carColorTextBox.Location = new System.Drawing.Point(443, 49);
             this.carColorTextBox.Name = "carColorTextBox";
             this.carColorTextBox.Size = new System.Drawing.Size(150, 20);
             this.carColorTextBox.TabIndex = 8;
@@ -69,7 +69,7 @@ namespace cmpt291A3
             // 
             // carTypeTextBox
             // 
-            this.carTypeTextBox.Location = new System.Drawing.Point(139, 49);
+            this.carTypeTextBox.Location = new System.Drawing.Point(443, 124);
             this.carTypeTextBox.Name = "carTypeTextBox";
             this.carTypeTextBox.Size = new System.Drawing.Size(150, 20);
             this.carTypeTextBox.TabIndex = 10;
@@ -78,7 +78,7 @@ namespace cmpt291A3
             // 
             this.carTypeLabel.AutoSize = true;
             this.carTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carTypeLabel.Location = new System.Drawing.Point(50, 50);
+            this.carTypeLabel.Location = new System.Drawing.Point(361, 125);
             this.carTypeLabel.Name = "carTypeLabel";
             this.carTypeLabel.Size = new System.Drawing.Size(76, 16);
             this.carTypeLabel.TabIndex = 11;
@@ -98,7 +98,7 @@ namespace cmpt291A3
             // 
             this.carBranchLabel.AutoSize = true;
             this.carBranchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carBranchLabel.Location = new System.Drawing.Point(361, 50);
+            this.carBranchLabel.Location = new System.Drawing.Point(50, 200);
             this.carBranchLabel.Name = "carBranchLabel";
             this.carBranchLabel.Size = new System.Drawing.Size(60, 16);
             this.carBranchLabel.TabIndex = 13;
@@ -108,7 +108,7 @@ namespace cmpt291A3
             // 
             this.carColorLabel.AutoSize = true;
             this.carColorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carColorLabel.Location = new System.Drawing.Point(50, 200);
+            this.carColorLabel.Location = new System.Drawing.Point(361, 50);
             this.carColorLabel.Name = "carColorLabel";
             this.carColorLabel.Size = new System.Drawing.Size(49, 16);
             this.carColorLabel.TabIndex = 14;
@@ -169,7 +169,7 @@ namespace cmpt291A3
             // 
             this.carVINLabel.AutoSize = true;
             this.carVINLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carVINLabel.Location = new System.Drawing.Point(361, 125);
+            this.carVINLabel.Location = new System.Drawing.Point(50, 50);
             this.carVINLabel.Name = "carVINLabel";
             this.carVINLabel.Size = new System.Drawing.Size(37, 16);
             this.carVINLabel.TabIndex = 20;
@@ -177,7 +177,7 @@ namespace cmpt291A3
             // 
             // carVINTextBox
             // 
-            this.carVINTextBox.Location = new System.Drawing.Point(427, 124);
+            this.carVINTextBox.Location = new System.Drawing.Point(139, 49);
             this.carVINTextBox.Name = "carVINTextBox";
             this.carVINTextBox.Size = new System.Drawing.Size(150, 20);
             this.carVINTextBox.TabIndex = 21;

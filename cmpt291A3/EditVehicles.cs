@@ -37,14 +37,13 @@ namespace cmpt291A3
 
         private void carUpdateButton_Click(object sender, EventArgs e)
         {
-            string[] values = new string[5];
+            string[] values = new string[4];
 
-            values[0] = updateString(carVINTextBox, "VIN");
-            values[1] = updateString(carColorTextBox, "Color");
-            values[2] = updateString(carModelTextBox, "Model");
-            values[3] = updateString(carTypeTextBox, "CarType");
-            values[4] = updateInt(carBranchTextBox, "Branch_ID");
-            string where = updateInt(carVINTextBox, "VIN");
+            values[0] = updateString(carColorTextBox, "Color");
+            values[1] = updateString(carModelTextBox, "Model");
+            values[2] = updateString(carTypeTextBox, "CarType");
+            values[3] = updateInt(carBranchTextBox, "Branch_ID");
+            string where = updateString(carVINTextBox, "VIN");
             string valuesString = string.Join(", ", values.Where(s => !string.IsNullOrEmpty(s)));
 
             if (string.IsNullOrEmpty(valuesString) || string.IsNullOrEmpty(where))
@@ -63,7 +62,7 @@ namespace cmpt291A3
             }
             catch (Exception)
             {
-                carConfirmationLabel.Text = "Enter valid information!";
+                carConfirmationLabel.Text = "Enter valid update information!";
                 carConfirmationLabel.Show();
             }
         }
@@ -87,7 +86,7 @@ namespace cmpt291A3
             }
             catch (Exception)
             {
-                carConfirmationLabel.Text = "Enter valid information!";
+                carConfirmationLabel.Text = "Enter valid add information!";
                 carConfirmationLabel.Show();
             }
         }
@@ -118,7 +117,7 @@ namespace cmpt291A3
             }
             catch (Exception)
             {
-                carConfirmationLabel.Text = "Enter Valid Information";
+                carConfirmationLabel.Text = "Enter valid delete information!";
                 carConfirmationLabel.Show();
             }
         }
