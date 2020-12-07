@@ -74,5 +74,13 @@ namespace cmpt291A3
             er.ShowDialog();
             this.Close();
         }
+
+        private void cars_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EditVehicles ev = new EditVehicles(connectionString);
+            ev.ShowDialog();
+            this.Close();
+        }
     }
 }

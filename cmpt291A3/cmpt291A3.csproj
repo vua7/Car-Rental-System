@@ -76,11 +76,11 @@
     <Compile Include="Branches.Designer.cs">
       <DependentUpon>Branches.cs</DependentUpon>
     </Compile>
-    <Compile Include="carLookup.cs">
+    <Compile Include="EditVehicles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="carLookup.Designer.cs">
-      <DependentUpon>carLookup.cs</DependentUpon>
+    <Compile Include="EditVehicles.Designer.cs">
+      <DependentUpon>EditVehicles.cs</DependentUpon>
     </Compile>
     <Compile Include="EditCustomer.cs">
       <SubType>Form</SubType>
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="Branches.resx">
       <DependentUpon>Branches.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="carLookup.resx">
-      <DependentUpon>carLookup.cs</DependentUpon>
+    <EmbeddedResource Include="EditVehicles.resx">
+      <DependentUpon>EditVehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditCustomer.resx">
       <DependentUpon>EditCustomer.cs</DependentUpon>
